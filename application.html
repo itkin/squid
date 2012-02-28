@@ -2,9 +2,11 @@
   <link href="lib/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="application.css" rel="stylesheet" type="text/css" />
   <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/jquery.effects.core.js" type="text/javascript"></script>
   <script src="lib/bootstrap/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+  <script src="application.js" type="text/javascript"></script>
 </head>
-<body>
+<body data-spy="scroll" data-offset="130">
   <div class="container-fluid" id="content">
     <div class="row-fluid navbar navbar-fixed-top" id="header">
       <div class="navbar-inner">
@@ -14,32 +16,91 @@
           </a>
           <ul class="nav nav-pills pull-right" id="menu">
             <li>
-              <a href="#home">Accueil</a>
+              <a href="#home">accueil</a>
             </li>
             <li>
-              <a href="#about">Squid ?</a>
+              <a href="#about">squid ?</a>
             </li>
             <li>
-              <a href="#service">Service</a>
+              <a href="#service">service</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">contact</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="row-fluid" id="home">
-      <div class="span12" id="demo-container">
+      <div class="container-fluid">
         <h1>Lorem Ipsum</h1>
         <h2>Bla bla bla</h2>
         <div id="buttons">
-          <div id="demo-button">Voir ntre demo</div>
-          <div id="contact-button">Nous contacter</div>
+          <a class="btn btn-primary" id="demo-button">
+            <span>Voir notre demo</span>
+          </a>
+          <a class="btn btn-primary" id="contact-button">
+            <span>Nous contacter</span>
+          </a>
         </div>
       </div>
     </div>
-    <div id="about"></div>
+    <div id="about">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span4">
+            <div class="round">
+              <img src="img/square.png" />
+            </div>
+            <span>
+              Nous créons des images numériques
+            </span>
+          </div>
+          <div class="span4">
+            <div class="round">
+              <img src="img/square.png" />
+            </div>
+            <span>
+              Nous sommes un collectif de graphistes indépendants
+            </span>
+          </div>
+          <div class="span4">
+            <div class="round">
+              <img src="img/square.png" />
+            </div>
+            <span>
+              Nous sommes une corporation pluridiscilinaire
+            </span>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span4">
+            <div class="round">
+              <img src="img/square.png" />
+            </div>
+            <span>
+              Nous assurons l'ensemble de la production
+            </span>
+          </div>
+          <div class="span4">
+            <div class="round">
+              <img src="img/square.png" />
+            </div>
+            <span>
+              Nous sommes mobiles
+            </span>
+          </div>
+          <div class="span4">
+            <div class="round">
+              <img src="img/square.png" />
+            </div>
+            <span>
+              Nous sommes expérimentés et passionnés
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="service"></div>
     <div id="contact"></div>
   </div>

@@ -3,9 +3,10 @@
   %link{:rel => "stylesheet", :type=>"text/css", :href=>"application.css"}
 
   %script{:src => "js/jquery.js", :type => "text/javascript"}
+  %script{:src => "js/jquery.effects.core.js", :type => "text/javascript"}
   %script{:src => "lib/bootstrap/bootstrap/js/bootstrap.js", :type => "text/javascript"}
-
-%body
+  %script{:src => "application.js", :type => "text/javascript"}
+%body(data-spy="scroll" data-offset=130)
   #content.container-fluid
     #header.row-fluid.navbar.navbar-fixed-top
       .navbar-inner
@@ -14,21 +15,56 @@
             %img{:src => "img/logo.png"}
           %ul#menu.nav.nav-pills.pull-right
             %li
-              %a(href="#home") Accueil
+              %a(href="#home") accueil
             %li
-              %a(href="#about"  ) Squid ?
+              %a(href="#about"  ) squid ?
             %li
-              %a(href="#service") Service
+              %a(href="#service") service
             %li
-              %a(href="#contact") Contact
+              %a(href="#contact") contact
 
     #home.row-fluid
-      #demo-container.span12
+      .container-fluid
         %h1 Lorem Ipsum
         %h2 Bla bla bla
         #buttons
-          #demo-button Voir ntre demo
-          #contact-button Nous contacter
+          %a#demo-button.btn.btn-primary
+            %span Voir notre demo
+          %a#contact-button.btn.btn-primary
+            %span Nous contacter
     #about
+      .container-fluid
+        .row-fluid
+          .span4
+            .round
+              %img{:src => "img/square.png"}
+            %span
+              Nous créons des images numériques
+          .span4
+            .round
+              %img{:src => "img/square.png"}
+            %span
+              Nous sommes un collectif de graphistes indépendants
+          .span4
+            .round
+              %img{:src => "img/square.png"}
+            %span
+              Nous sommes une corporation pluridiscilinaire
+        .row-fluid
+          .span4
+            .round
+              %img{:src => "img/square.png"}
+            %span
+              Nous assurons l'ensemble de la production
+          .span4
+            .round
+              %img{:src => "img/square.png"}
+            %span
+              Nous sommes mobiles
+          .span4
+            .round
+              %img{:src => "img/square.png"}
+            %span
+              Nous sommes expérimentés et passionnés
     #service
     #contact
