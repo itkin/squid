@@ -1,0 +1,55 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+body {
+  background: url('img/background.png') left top repeat;
+}
+body #content {
+  padding: 0;
+}
+body #content #header.navbar .navbar-inner {
+  background: url('img/header.png') left top repeat-x;
+  -webkit-box-shadow: 0 5px 20px 1px #131313;
+  -moz-box-shadow: 0 5px 20px 1px #131313;
+  box-shadow: 0 5px 20px 1px #131313;
+  height: 142px;
+}
+body #content #header.navbar .navbar-inner .brand {
+  padding: 0;
+  margin-left: -150px;
+}
+body #content #header.navbar .navbar-inner .container-fluid {
+  position: relative;
+}
+body #content #header.navbar .navbar-inner .container-fluid #menu {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: inherit;
+}
+body #content #home {
+  background: url('img/jewels.png') left top no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  margin-top: 140px;
+  text-align: center;
+}
+body #content #home h1 {
+  margin-top: 110px;
+  color: white;
+}
+body #content #home #buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,41 @@
+@import "lib/bootstrap/less/variables.less";
+@import "lib/bootstrap/less/mixins.less";
+
+body{
+  background: url('img/background.png') left top repeat;
+  #content{
+    padding: 0;
+    #header.navbar .navbar-inner{
+      .brand{
+        padding: 0;
+        margin-left: -150px;
+      }
+      background: url('img/header.png') left top repeat-x;
+      .box-shadow(0 5px 20px 1px #131313);
+      height: 142px;
+      .container-fluid{
+        position: relative;
+        #menu {
+          position: absolute;
+          bottom: 15px;
+          right: 0;
+          left: inherit;
+        }
+      }
+    }
+    #home{
+      background: url('img/jewels.png') left top no-repeat;
+      .background-size(100%);
+
+      margin-top: 140px;
+      text-align: center;
+      h1{
+        margin-top: 110px;
+        color: white;
+      }
+      #buttons{
+        .center-block();
+      }
+    }
+  }
+}

@@ -18,8 +18,8 @@ mtimes = {}
 puts "Watching #{watch_folder} and subfolders for changes in SASS & HAML files..."
 
 while true do
-  files = Dir.glob( File.join( watch_folder, "**", "*.haml" ) )
-  files += Dir.glob( File.join( watch_folder, "**", "*.sass" ) )
+  files = Dir.glob( File.join( watch_folder, "*.haml" ) )
+  files += Dir.glob( File.join( watch_folder, "*.less" ) )
 
   new_hash = files.collect {|f| [ f, File.stat(f).mtime.to_i ] }
   hash ||= new_hash
@@ -34,26 +34,21 @@ while true do
       output_file = ""
       options = ""
       is_haml = false
-      
-      ex = f.match(/(sass|haml)$/)[1]
-      case ex
-      when "haml"
-        output_folder = "#{watch_folder}/html"
-        Dir.mkdir(output_folder) unless File.directory?(output_folder)
-        
-        output_file = f.gsub(/\/haml\/([^\/]+)\.haml/, '/html/\1.html')
+      output_folder = watch_folder
+      ext = f.match(/(less|haml)$/)[1]
+
+      if ext == "haml"
+        ex = "haml"
+        output_file = f.gsub(/\.haml$/, '.html')
         is_haml = true
-
-      when "sass"
-        output_folder = "#{watch_folder}/css"
-        Dir.mkdir(output_folder) unless File.directory?(output_folder)
-
-        output_file = f.gsub(/\/sass\/([^\/]+)\.sass/, '/css/\1.css')
-        options = "--style expanded"
-
+        cmd = "#{ex} #{options} #{f} #{output_file}"
+      elsif ext == "less"
+        ex = "lessc"
+        output_file = f.gsub(/\.less$/, '.css')
+        #options = "-x"
+        cmd = "#{ex} #{options} #{f} > #{output_file}"
       end
 
-      cmd = "#{ex} #{options} #{f} #{output_file}"
       puts "- #{cmd}"
       system(cmd)
       
