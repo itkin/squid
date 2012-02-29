@@ -51,8 +51,10 @@ body{
 
   a {
     cursor: pointer;
+    text-decoration: none !important;
     &:focus{
       outline: none !important;
+      text-decoration: none !important;
     }
     &:active{
       outline: none !important;
@@ -110,7 +112,10 @@ body{
         margin-top: 100px;
         margin-bottom: 100px;
         a {
-          .buttonBackground(#676767, lighten(#676767, 20%) );
+          #gradient > .radial(lighten(#676767, 40%),#676767);
+          &:hover{
+            background-position: inherit;
+          }
           height: 110px;
           width: 220px;
           vertical-align: middle;
@@ -128,7 +133,6 @@ body{
           }
           &#contact-button{
             margin-top: 5px;
-            .buttonBackground(lighten(#676767, 20%), #676767);
             .border-radius(0 0 120px 120px);
             span {
               top: 40%;
@@ -143,8 +147,53 @@ body{
         .span4{
           text-align: center ;
           color: white;
+//          .feature{
+//            .center-block();
+//            width: 250px;
+//            height: 196px;
+//            overflow: hidden;
+//          }
+          .feature{
+            position: relative;
+            overflow: hidden;
+            width: 240px;
+            height: 196 + 30 + 40px;
+            .center-block();
+            .feature-slider{
+              padding: 10px;
+              padding-top: 0;
+              &.opened a.title{
+                color: @blue;
+                &:hover {
+                  color: lighten(@blue, 30%);
+                }
+              }
+            }
+            .title{
+              height: 40px;
+              .inline-block();
+              cursor: pointer;
+              .transition(color .5s);
+              &:focus{
+                color: @grayLight
+              }
+
+            }
+            .description {
+              background: lighten(#131313, 3%);
+              box-shadow: 5px 5px 10px 3px darken(#131313,30%) inset, 2px 2px 6px 1px #3a3a3a;
+              .border-radius(5px);
+              margin-top: 10px;
+              height: 186px;
+              overflow-y: auto;
+              p{
+                margin: 1em;
+              }
+            }
+          }
           .round {
             .center-block();
+            cursor: pointer;
             height: 196px;
             width: 196px;
             background: #131313;
@@ -153,13 +202,12 @@ body{
             box-shadow: 5px 5px 10px 3px darken(#131313,30%) inset, 2px 1px 6px 0 #3a3a3a;
             img{
               margin-top: 55px;
-              &#people{ margin-left: -5px; }
-              &#pencils{ margin-left: -8px; margin-top: 48px;}
+              &#people{ margin-left: -8px; }
+              &#pencils{ margin-left: -11px; margin-top: 48px;}
               &#wheel{ margin-left: 0px; margin-top: 35px;}
               &#earth{ margin-left: -11px; margin-top: 31px;}
               &#coeur{ margin-left: -10px; margin-top: 55px;}
             }
-
           }
         }
 
