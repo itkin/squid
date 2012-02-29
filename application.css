@@ -117,7 +117,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: dinLigh, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: dinLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -595,7 +595,7 @@ a:hover {
 }
 p {
   margin: 0 0 10px;
-  font-family: dinLigh, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: dinLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -6792,7 +6792,7 @@ a.thumbnail:hover {
 /*}*/
 @font-face {
   font-family: dinLight ;
-  src: url("fonts/DinLight.ttf"), url("fonts/dinLight.otf");
+  src: url("fonts/DinLight.ttf"), url("fonts/DinLight.otf");
 }
 h1,
 h2,
