@@ -7172,3 +7172,22 @@ body #content #about .row-fluid .span4 .round {
 body #content #about .row-fluid .span4 .round img {
   margin-top: 55px;
 }
+body #content #about .row-fluid .span4 .round img#people {
+  margin-left: -5px;
+}
+body #content #about .row-fluid .span4 .round img#pencils {
+  margin-left: -8px;
+  margin-top: 48px;
+}
+body #content #about .row-fluid .span4 .round img#wheel {
+  margin-left: 0px;
+  margin-top: 35px;
+}
+body #content #about .row-fluid .span4 .round img#earth {
+  margin-left: -10px;
+  margin-top: 31px;
+}
+body #content #about .row-fluid .span4 .round img#coeur {
+  margin-left: -10px;
+  margin-top: 55px;
+}
