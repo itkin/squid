@@ -332,7 +332,11 @@ h3 {
 }
 body {
   font-family: dinLight ;
-  background: url('img/background.png') left top repeat;
+  background: url('img/jewels.png') left top no-repeat, url('img/background.png') left top repeat;
+  -webkit-background-size: 100%, auto;
+  -moz-background-size: 100%, auto;
+  -o-background-size: 100%, auto;
+  background-size: 100%, auto;
 }
 body a {
   cursor: pointer;
@@ -381,11 +385,6 @@ body #content #header.navbar .navbar-inner .container-fluid #menu li a:hover {
   color: #9bdaf4;
 }
 body #content #home {
-  background: url('img/jewels.png') left top no-repeat;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
   text-align: center;
 }
 body #content #home h1 {
