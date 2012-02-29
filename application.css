@@ -497,9 +497,7 @@ body #content #about .row-fluid .span4 .round {
   -webkit-border-radius: 96px;
   -moz-border-radius: 96px;
   border-radius: 96px;
-  -webkit-box-shadow: 0 0 10px 3px #000000 inset;
-  -moz-box-shadow: 0 0 10px 3px #000000 inset;
-  box-shadow: 0 0 10px 3px #000000 inset;
+  box-shadow: 5px 5px 10px 3px #000000 inset, 2px 1px 6px 0 #3a3a3a;
 }
 body #content #about .row-fluid .span4 .round img {
   margin-top: 55px;
