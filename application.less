@@ -1,6 +1,5 @@
-@import "lib/bootstrap/less/variables.less";
-@import "lib/bootstrap/less/mixins.less";
-@import "lib/bootstrap/less/buttons.less";
+@import "lib/bootstrap/less/bootstrap.less";
+@import "lib/bootstrap/less/responsive.less";
 
 .inline-block {
   & { *display: inline; }
@@ -11,24 +10,44 @@
   *vertical-align: auto;
 }
 
+@media (max-width: 979px) {
+  #menu{
+    bottom: inherit !important ;
+  }
+  .navbar-fixed-top {
+      margin-bottom: 0 !important;
+  }
+  #content{
+    margin-top: 0 !important;
+  }
+}
+/*@media (min-width: 1200px) {*/
+  /*.brand{*/
+    /*margin-left: -120px !important; //-150px*/
+  /*}*/
+  /*#menu{*/
+    /*margin-right: 30px !important;*/
+  /*}*/
+/*}*/
+
 @font-face{
   font-family: dinLight ;
   src: url("fonts/dinLight.ttf"), url("fonts/dinLight.otf");
 }
 
-@blue: #9bdaf4;
+
 
 h1,h2,h3{
-  font-weight: normal;
+  font-weight: 300;
+  letter-spacing: 0.1ex;
 }
 
 body{
-  font-family: dinLight ;
-  background: url('img/jewels.png') left top no-repeat, url('img/background.png') left top repeat;
-  -webkit-background-size: 100%, auto;
-     -moz-background-size: 100%, auto;
-       -o-background-size: 100%, auto;
-          background-size: 100%, auto;
+  background: url('img/jewels.png') left 130px no-repeat, url('img/background.png') left top repeat;
+    -webkit-background-size: 100%, auto;
+       -moz-background-size: 100%, auto;
+         -o-background-size: 100%, auto;
+            background-size: 100%, auto ;
 
   a {
     cursor: pointer;
@@ -39,39 +58,42 @@ body{
       outline: none !important;
     }
   }
-  #content{
-    margin-top: 130px;
+  #header.navbar .navbar-inner{
+    .brand{
+      padding: 0;
+      margin-left: -150px;
+    }
+    background: url('img/header.png') left top repeat-x;
+    .box-shadow(none);
     padding: 0;
-    #header.navbar .navbar-inner{
-      .brand{
-        padding: 0;
-        margin-left: -150px;
-      }
-      background: url('img/header.png') left top repeat-x;
-      .box-shadow(0 5px 20px 1px #131313);
-      height: 142px;
-      .container-fluid{
-        position: relative;
-        #menu {
-          position: absolute;
-          bottom: 15px;
-          right: 0;
-          left: inherit;
-          li{
-            &.active a {
-              background: none transparent;
+    .box-shadow(0 5px 20px 1px #131313);
+    height: 142px;
+    .container{
+      position: relative;
+      #menu {
+        font-size: 120%;
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        left: inherit;
+        li{
+          a{
+            .transition(color 1s);
+            &:hover{
+              color: @grayLighter;
             }
-            a{
-              .transition(color 1s);
-              &:hover{
-                color: @blue;
-              }
-            }
-
+          }
+          &.active a {
+            background: none transparent;
+            color: @blue;
           }
         }
       }
     }
+  }
+  #content{
+    margin-top: 130px;
+    padding: 0;
     #home{
       text-align: center;
       h1{

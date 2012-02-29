@@ -7,9 +7,6 @@
 // GLOBAL VALUES
 // --------------------------------------------------
 
-// Links
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
 
 // Grays
 @black:                 #000;
@@ -21,8 +18,8 @@
 @white:                 #fff;
 
 // Accent colors
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
+@blue:                  #9bdaf4;
+@blueDark:              darken(#0064cd,20%);
 @green:                 #46a546;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
@@ -31,10 +28,15 @@
 @purple:                #7a43b6;
 
 // Typography
-@baseFontSize:          13px;
-@baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@baseLineHeight:        18px;
+@baseFontSize:          16px;
+@baseFontFamily:        dinLigh, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseLineHeight:        20px;
 @textColor:             @grayDark;
+
+// Links
+@linkColor:             @grayLight;
+@linkColorHover:        @grayLighter;
+
 
 // Buttons
 @primaryButtonBackground:    @linkColor;
