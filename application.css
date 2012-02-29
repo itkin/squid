@@ -6960,6 +6960,7 @@ body #content #about .row-fluid .span4 .feature {
   overflow: hidden;
   width: 240px;
   height: 266px;
+  margin-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
