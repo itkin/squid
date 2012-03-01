@@ -7,7 +7,7 @@
   %script{:src => "application.js", :type => "text/javascript"}
 
 %body(data-spy="scroll" data-offset=130)
-  #header.row-fluid.navbar.navbar-fixed-top
+  #header.navbar.navbar-fixed-top
     .navbar-inner
       .container
         %a.brand{:href=>"#"}
@@ -16,14 +16,13 @@
           %li
             %a(href="#home") accueil
           %li
-            %a(href="#about"  ) squid ?
+            %a(href="#about"  ) squid?
           %li
-            %a(href="#service") service
+            %a(href="#service") services
           %li
             %a(href="#contact") contact
-
-  #content.container
-    #home.row-fluid
+  #home.container-fluid
+    .row-fluid
       .span12
         %h1 lorem ipsum dolor sit amet
         %h2 lorem ipsum dolor sit amet
@@ -32,6 +31,7 @@
             %span Voir notre demo
           %a#contact-button.btn.btn-primary
             %span Nous contacter
+  .container
     #about.row-fluid
       .span12
         .row-fluid
@@ -44,7 +44,7 @@
                 .description
                   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
           .span4
-            .feature
+            .feature.centered
               .feature-slider
                 .round
                   %img#people{:src => "img/people.png"}
@@ -52,7 +52,7 @@
                 .description
                   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
           .span4
-            .feature
+            .feature.pull-right
               .feature-slider
                 .round
                   %img#pencils{:src => "img/pencils.png"}
@@ -71,7 +71,7 @@
                   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
 
           .span4
-            .feature
+            .feature.centered
               .feature-slider
                 .round
                   %img#earth{:src => "img/earth.png"}
@@ -80,7 +80,7 @@
                   %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
 
           .span4
-            .feature
+            .feature.pull-right
               .feature-slider
                 .round
                   %img#coeur{:src => "img/coeur.png"}

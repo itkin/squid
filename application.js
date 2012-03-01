@@ -2,12 +2,14 @@
   $(document).ready(function(){
     $("#menu a").click(function(e){
       e.preventDefault();
-      var offset = parseInt($('#content').css('marginTop').replace('px',''))
+      var offset = parseInt($('#home').css('marginTop').replace('px',''))
       $("body").animate({scrollTop: $($(this).attr("href")).offset()['top'] - offset},$.fx.speeds.slow, "easeInOutExpo")
     });
+
     $('.feature-slider').click(function(e){
       var $this = $(this);
-      e.stopPropagation();
+      e.stopImmediatePropagation();
+      e.preventDefault();
       if ($(e.target).hasClass('title') && $this.css('marginTop') == "-216px"){
         $this.animate({marginTop: "0"})
         $this.removeClass("opened")

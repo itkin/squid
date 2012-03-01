@@ -17,8 +17,14 @@
   .navbar-fixed-top {
       margin-bottom: 0 !important;
   }
-  #content{
+  #home {
     margin-top: 0 !important;
+  }
+  div#about .row-fluid .span4 div.feature{
+    &.pull-right{
+      float: none;
+    }
+    .center-block();
   }
 }
 /*@media (min-width: 1200px) {*/
@@ -43,12 +49,7 @@ h1,h2,h3{
 }
 
 body{
-  background: url('img/jewels.png') left 130px no-repeat, url('img/background.png') left top repeat;
-    -webkit-background-size: 100%, auto;
-       -moz-background-size: 100%, auto;
-         -o-background-size: 100%, auto;
-            background-size: 100%, auto ;
-
+  background: url('img/background.png') left top repeat;
   a {
     cursor: pointer;
     text-decoration: none !important;
@@ -73,13 +74,15 @@ body{
     .container{
       position: relative;
       #menu {
-        font-size: 120%;
         position: absolute;
         bottom: 15px;
-        right: 0;
+        right: -10px;
         left: inherit;
         li{
           a{
+            margin-left: 4ex;
+            font-size: 160%;
+            font-weight: 100;
             .transition(color 1s);
             &:hover{
               color: @grayLighter;
@@ -93,125 +96,122 @@ body{
       }
     }
   }
-  #content{
+  #home{
+    background: url('img/jewels.png') left top repeat-x;
+    .background-size(auto 100%);
     margin-top: 130px;
     padding: 0;
-    #home{
-      text-align: center;
-      h1{
-        margin-top: 110px;
-        color: white;
-      }
-      h2{
-        color: @blue;
-        padding-top: 0.5em;
-      }
-      #buttons{
-        .center-block();
+    text-align: center;
+    h1{
+      margin-top: 110px;
+      color: white;
+    }
+    h2{
+      color: @blue;
+      padding-top: 0.5em;
+    }
+    #buttons{
+      .center-block();
+      width: 220px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      a {
+        #gradient > .radial(lighten(#676767, 40%),#676767);
+        &:hover{
+          background-position: inherit;
+        }
+        height: 110px;
         width: 220px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        a {
-          #gradient > .radial(lighten(#676767, 40%),#676767);
-          &:hover{
-            background-position: inherit;
-          }
-          height: 110px;
-          width: 220px;
-          vertical-align: middle;
-          .border-radius(120px 120px 0 0);
-          .box-shadow(0 0 20px 3px #131313);
-          position: relative;
-          padding: 0;
-          span{
-            display: block;
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 60%;
-            margin-top: -1ex;
-          }
-          &#contact-button{
-            margin-top: 5px;
-            .border-radius(0 0 120px 120px);
-            span {
-              top: 40%;
-            }
+        vertical-align: middle;
+        .border-radius(120px 120px 0 0);
+        .box-shadow(0 0 20px 3px #131313);
+        position: relative;
+        padding: 0;
+        span{
+          display: block;
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          top: 60%;
+          margin-top: -1ex;
+        }
+        &#contact-button{
+          margin-top: 5px;
+          .border-radius(0 0 120px 120px);
+          span {
+            top: 40%;
           }
         }
       }
     }
-    #about{
-      .row-fluid{
-        margin-top: 60px;
-        .span4{
-          text-align: center ;
-          color: white;
+  }
+  #about{
+    .row-fluid{
+      margin-top: 30px;
+      .span4{
+        color: white;
 //          .feature{
 //            .center-block();
 //            width: 250px;
 //            height: 196px;
 //            overflow: hidden;
 //          }
-          .feature{
-            position: relative;
-            overflow: hidden;
-            width: 240px;
-            height: 196 + 30 + 40px;
-            margin-bottom: 20px;
+        .feature{
+          &.centered{
             .center-block();
-            .feature-slider{
-              padding: 10px;
-              padding-top: 0;
-              &.opened a.title{
-                color: @blue;
-                &:hover {
-                  color: lighten(@blue, 30%);
-                }
-              }
-            }
-            .title{
-              height: 40px;
-              .inline-block();
-              cursor: pointer;
-              .transition(color .5s);
-              &:focus{
-                color: @grayLight
-              }
-
-            }
-            .description {
-              background: lighten(#131313, 3%);
-              box-shadow: 5px 5px 10px 3px darken(#131313,30%) inset, 2px 2px 6px 1px #3a3a3a;
-              .border-radius(5px);
-              margin-top: 10px;
-              height: 186px;
-              overflow-y: auto;
-              p{
-                margin: 1em;
+          }
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          width: 240px;
+          height: 196 + 20 + 40px;
+          margin-bottom: 10px;
+          .feature-slider{
+            &.opened a.title{
+              color: @blue;
+              &:hover {
+                color: lighten(@blue, 30%);
               }
             }
           }
-          .round {
-            .center-block();
+          .title{
+            height: 40px;
+            .inline-block();
             cursor: pointer;
-            height: 196px;
-            width: 196px;
-            background: #131313;
-            margin-bottom: 30px;
-            .border-radius(96px);
-            box-shadow: 5px 5px 10px 3px darken(#131313,30%) inset, 2px 1px 6px 0 #3a3a3a;
-            img{
-              margin-top: 55px;
-              &#people{ margin-left: -8px; }
-              &#pencils{ margin-left: -11px; margin-top: 48px;}
-              &#wheel{ margin-left: 0px; margin-top: 35px;}
-              &#earth{ margin-left: -11px; margin-top: 31px;}
-              &#coeur{ margin-left: -10px; margin-top: 55px;}
+            .transition(color .5s);
+            &:focus{
+              color: @grayLight
+            }
+
+          }
+          .description {
+            .border-radius(5px);
+            margin-top: 10px;
+            height: 186px;
+            overflow-y: auto;
+            p{
+              margin: 1em;
             }
           }
         }
-
+        .round {
+          .center-block();
+          cursor: pointer;
+          height: 196px;
+          width: 196px;
+          background: #131313;
+          margin-bottom: 20px;
+          .border-radius(96px);
+          box-shadow: 2px 1px 6px 0 darken(#131313,30%) inset, 2px 1px 6px 0 #3a3a3a ;
+          img{
+            margin-top: 55px;
+            &#people  { margin-left: -8px;                    }
+            &#pencils { margin-left: -11px; margin-top: 48px; }
+            &#wheel   { margin-left: 0px; margin-top: 35px;   }
+            &#earth   { margin-left: -11px; margin-top: 31px; }
+            &#coeur   { margin-left: -10px; margin-top: 55px; }
+          }
+        }
       }
     }
   }
