@@ -41,6 +41,7 @@ while true do
         ex = "haml"
         output_file = f.gsub(/\.haml$/, '.html')
         is_haml = true
+        options = "-e"
         cmd = "#{ex} #{options} #{f} #{output_file}"
       elsif ext == "less"
         ex = "lessc"
