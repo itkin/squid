@@ -3,7 +3,7 @@
     $("#menu a").click(function(e){
       e.preventDefault();
       var offset = parseInt($('#home').css('marginTop').replace('px',''))
-      $("body").animate({scrollTop: $($(this).attr("href")).offset()['top'] - offset},$.fx.speeds.slow, "easeInOutExpo")
+      $("body").animate({scrollTop: $($(this).attr("href")).offset()['top'] - offset}, 2000, "easeInOutExpo")
     });
 
     $('.feature-slider').click(function(e){
