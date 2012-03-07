@@ -1,0 +1,86 @@
+!!!
+%head
+  %meta(name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;")
+  = stylesheet_link_tag "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+%body(data-spy="scroll" data-offset=130)
+  #header.navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        = link_to "#", :class => "brand" do
+          = image_tag "logo.png"
+        %ul#menu.nav.nav-pills.pull-right
+          %li= link_to "accueil", "#home"
+          %li= link_to "squid?", "#about"
+          %li= link_to "services", "#service"
+          %li= link_to "contact" , "#contact"
+  #home.container-fluid
+    .row-fluid
+      .span12
+        %h1 lorem ipsum dolor sit amet
+        %h2 lorem ipsum dolor sit amet
+        #buttons
+          %a#demo-button.btn.btn-primary
+            %span Voir notre demo
+          %a#contact-button.btn.btn-primary
+            %span Nous contacter
+  .container
+    #about.row-fluid
+      .span12
+        .row-fluid
+          .span4
+            .feature
+              .feature-slider
+                .round
+                  = image_tag "square.png", :id => "square"
+                %a.title Nous créons des images numériques
+                .description
+                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+          .span4
+            .feature.centered
+              .feature-slider
+                .round
+                  = image_tag "people.png", :id => "people"
+                %a.title Nous sommes un collectif de graphistes indépendants.
+                .description
+                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+          .span4
+            .feature.pull-right
+              .feature-slider
+                .round
+                  = image_tag "pencils.png", :id => "pencils"
+                %a.title Nous sommes une corporation pluridiscilinaire
+                .description
+                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+
+        .row-fluid
+          .span4
+            .feature
+              .feature-slider
+                .round
+                  = image_tag "wheel.png", :id => "wheel"
+                %a.title Nous assurons l'ensemble de la production
+                .description
+                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+
+          .span4
+            .feature.centered
+              .feature-slider
+                .round
+                  = image_tag "earth.png", :id => "earth"
+                %a.title Nous sommes mobiles
+                .description
+                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+
+          .span4
+            .feature.pull-right
+              .feature-slider
+                .round
+                  = image_tag "coeur.png", :id => "coeur"
+                %a.title Nous sommes expérimentés et passionnés
+                .description
+                  %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+
+    #service
+    #contact
