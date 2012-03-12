@@ -1,0 +1,50 @@
+
+
+@blue:                  #9bdaf4;
+@blueDark:              darken(#0064cd,20%);
+
+// Links
+@linkColor:             @grayLight;
+@linkColorHover:        @grayLighter;
+
+
+// Buttons
+@primaryButtonBackground:    @linkColor;
+@baseFontSize:          14px;
+@baseFontFamily:        dinLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseLineHeight:        20px;
+@textColor:             @grayLight;
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
+
+.inline-block  {
+  & { *display: inline; }
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: @grayLight;
+}
+
+//@media (max-width: 979px) {
+//  #menu{
+//    bottom: inherit !important ;
+//  }
+//  .navbar-fixed-top {
+//      margin-bottom: 0 !important;
+//  }
+//  #home {
+//    margin-top: 0 !important;
+//  }
+//  div#about .row-fluid .span4 div.feature{
+//    &.pull-right{
+//      float: none;
+//    }
+//    .center-block();
+//  }
+//}

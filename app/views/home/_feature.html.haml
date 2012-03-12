@@ -1,0 +1,10 @@
+
+.span4
+  .feature{:class => position}
+    .feature-slider
+      .round
+        = image_tag "#{elt_id}.png", :id => elt_id
+      %a.title= t("#{key}.title")
+      .picto
+      .description
+        %p!= t("#{key}.description")

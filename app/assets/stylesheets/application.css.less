@@ -1,53 +1,10 @@
-
-@import "twitter/bootstrap/bootstrap";
-@import "twitter/bootstrap/responsive";
-
-@blue:                  #9bdaf4;
-@blueDark:              darken(#0064cd,20%);
-
-// Links
-@linkColor:             @grayLight;
-@linkColorHover:        @grayLighter;
+@import "twitter/bootstrap/variables";
+@import "twitter/bootstrap/mixins";
+@import "bootstrap_overrides.css.less";
 
 
-// Buttons
-@primaryButtonBackground:    @linkColor;
-@baseFontSize:          16px;
-@baseFontFamily:        dinLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@baseLineHeight:        20px;
-@textColor:             @grayDark;
-
-// Set the correct sprite paths
-@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
-@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
 
 
-.inline-block  {
-  & { *display: inline; }
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-}
-
-@media (max-width: 979px) {
-  #menu{
-    bottom: inherit !important ;
-  }
-  .navbar-fixed-top {
-      margin-bottom: 0 !important;
-  }
-  #home {
-    margin-top: 0 !important;
-  }
-  div#about .row-fluid .span4 div.feature{
-    &.pull-right{
-      float: none;
-    }
-    .center-block();
-  }
-}
 /*@media (min-width: 1200px) {*/
   /*.brand{*/
     /*margin-left: -120px !important; //-150px*/
@@ -66,8 +23,11 @@ h1,h2,h3{
   font-weight: 300;
   letter-spacing: 0.1ex;
 }
-
+.container{
+  margin-top: 100px;
+}
 body{
+  padding-top: 99px;
   background: image-url('background.png') left top repeat;
   a {
     cursor: pointer;
@@ -83,14 +43,14 @@ body{
   #header.navbar .navbar-inner{
     .brand{
       padding: 0;
-      margin-left: -150px;
+      margin-left: -200px;
     }
     background: image-url('header.png') left top repeat-x;
     .box-shadow(none);
-    padding: 0;
     .box-shadow(0 5px 20px 1px #131313);
-    height: 142px;
+    height: 99px;
     .container{
+      margin-top: 0;
       position: relative;
       #menu {
         position: absolute;
@@ -100,7 +60,7 @@ body{
         li{
           a{
             margin-left: 4ex;
-            font-size: 160%;
+            font-size: 20px;
             font-weight: 100;
             .transition(color 1s);
             &:hover{
@@ -115,113 +75,50 @@ body{
       }
     }
   }
+
   #home{
+    margin-top: 0;
     background: image-url('jewels.png') left top repeat-x;
-    .background-size(auto 100%);
-    margin-top: 130px;
-    padding: 0;
+    .background-size(cover);
     text-align: center;
-    h1{
-      margin-top: 110px;
-      color: white;
+    #titles{
+      text-align: center;
+      h1{
+        margin-top: 170px;
+        color: white;
+      }
+      h2{
+        .inline-block();
+        color: @blue;
+        padding-top: 1em;
+        padding-bottom: 3px;
+        line-height: 30px;
+        border-bottom: .5px solid @blue;
+      }
     }
-    h2{
-      color: @blue;
-      padding-top: 0.5em;
+    #blue-vertical-line{
+      clear: both;
+      width: 50%;
+      height: 80px;
+      border-right: .5px solid @blue;
+      margin-bottom: 10px;
+      position: relative;
+      right: 1px;
     }
-    #buttons{
-      .center-block();
-      width: 220px;
-      margin-top: 100px;
-      margin-bottom: 100px;
-      a {
-        #gradient > .radial(lighten(#676767, 40%),#676767);
-        &:hover{
-          background-position: inherit;
-        }
-        height: 110px;
-        width: 220px;
-        vertical-align: middle;
-        .border-radius(120px 120px 0 0);
-        .box-shadow(0 0 20px 3px #131313);
-        position: relative;
-        padding: 0;
-        span{
-          display: block;
-          width: 100%;
-          text-align: center;
-          position: absolute;
-          top: 60%;
-          margin-top: -1ex;
-        }
-        &#contact-button{
-          margin-top: 5px;
-          .border-radius(0 0 120px 120px);
-          span {
-            top: 40%;
-          }
-        }
+    .round{
+      margin-bottom: 150px;
+      img{
+        margin-top: 65px;
+        margin-left: 30px;
       }
     }
   }
-  #about{
-    .row-fluid{
-      margin-top: 30px;
+  #about, #service{
+    .row{
+      padding-top: 30px;
       .span4{
         color: white;
-//          .feature{
-//            .center-block();
-//            width: 250px;
-//            height: 196px;
-//            overflow: hidden;
-//          }
-        .feature{
-          &.centered{
-            .center-block();
-          }
-          text-align: center;
-          position: relative;
-          overflow: hidden;
-          width: 240px;
-          height: 196 + 20 + 40px;
-          margin-bottom: 10px;
-          .feature-slider{
-            &.opened a.title{
-              color: @blue;
-              &:hover {
-                color: lighten(@blue, 30%);
-              }
-            }
-          }
-          .title{
-            height: 40px;
-            .inline-block();
-            cursor: pointer;
-            .transition(color .5s);
-            &:focus{
-              color: @grayLight
-            }
-
-          }
-          .description {
-            text-align: justify ;
-            margin-top: 10px;
-            height: 186px;
-            overflow-y: auto;
-            p{
-              margin: 1em;
-            }
-          }
-        }
         .round {
-          .center-block();
-          cursor: pointer;
-          height: 196px;
-          width: 196px;
-          background: #202020;
-          margin-bottom: 20px;
-          .border-radius(96px);
-          box-shadow: 2px 1px 6px 0 darken(#202020,30%) inset, 2px 1px 6px 0 #3a3a3a;
           img{
             margin-top: 55px;
             &#people  { margin-left: -8px;                    }
@@ -232,6 +129,141 @@ body{
           }
         }
       }
+    }
+  }
+  #contact{
+    h3{
+      margin-right: 50px;
+      text-align: right;
+      strong{
+        font-weight: normal;
+        color: @blue;
+      }
+    }
+    .info-block {
+      margin-right: 50px;
+      margin-top: 36px;
+      margin-bottom: 50px;
+      font-size: 90%;
+      text-align: right;
+    }
+    form{
+      margin-right: 50px;
+      float: right;
+      label{
+       color: @grayLight;
+      }
+      .submit{
+        float: right;
+        border: none;
+        img { margin-left: 5px; margin-top: 6px; }
+      }
+      textarea{
+        height: 240px;
+      }
+      input[type="text"], textarea{
+        background: #202020;
+        border: none;
+        box-shadow: 1px 1px 2px 0 darken(#202020,30%) inset, 1px 1px 3px 0 #3a3a3a;
+        color: @grayLight;
+        width: 280px;
+      }
+      .success{
+        color: @green;
+        padding-top: 10px;
+        margin-right: 10px;
+        float: right;
+      }
+    }
+    ul{
+      margin-left: 50px;
+      position: relative;
+      bottom: 20px;
+      li{
+        padding: 15px 0;
+        .round-icon{
+          margin-right: 20px;
+        }
+        span{
+          .inline-block();
+        }
+      }
+    }
+    .round-icon{
+      .mail     { margin-left: 5px; margin-top: 9px; }
+      .phone    { margin-left: 5px; margin-top: 6px; }
+      .plot     { margin-left: 5px; margin-top: 4px; }
+      .tweeter  { margin-left: 3px; margin-top: 6px; }
+      .facebook { margin-left: 9px; margin-top: 3px; }
+      .vimeo    { margin-left: 4px; margin-top: 8px; }
+    }
+  }
+}
+.round-icon{
+  width: 42px;
+  height: 42px;
+  background: #202020;
+  .border-radius(21px);
+  .inline-block();
+  box-shadow: 2px 1px 6px 0 darken(#202020,30%) inset, 2px 1px 6px 0 #3a3a3a;
+}
+.round {
+  .center-block();
+  cursor: pointer;
+  height: 196px;
+  width: 196px;
+  background: #202020;
+  margin-bottom: 20px;
+  .border-radius(96px);
+  box-shadow: 2px 1px 6px 0 darken(#202020,30%) inset, 2px 1px 6px 0 #3a3a3a;
+}
+
+.feature{
+  &.center{
+    .center-block();
+  }
+  &.left{
+    float: left;
+  }
+  &.right{
+    float: right;
+  }
+
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 220px;
+  height: 196 + 20 + 40px;
+  margin-bottom: 10px;
+  .feature-slider{
+    &.opened a.title{
+      color: @blue;
+      &:hover {
+        color: lighten(@blue, 30%);
+      }
+    }
+  }
+  .title{
+    height: 40px;
+    display:block;
+    cursor: pointer;
+    text-align: center;
+    .transition(color .5s);
+    &:focus{
+      color: @grayLight
+    }
+  }
+  .picto{
+    height: 40px;
+
+  }
+  .description {
+    text-align: center ;
+    height: 186px;
+    overflow-y: auto;
+    p{
+      margin: 1em;
+      margin-top: 5px;
     }
   }
 }

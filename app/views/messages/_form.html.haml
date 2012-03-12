@@ -1,0 +1,17 @@
+= bootstrap_form_for message do |f|
+
+  = f.control_group :name do
+    = f.text_field :name
+
+  = f.control_group :email do
+    = f.text_field :email
+
+  = f.control_group :object do
+    = f.text_field :object
+
+  = f.control_group :content do
+    = f.text_area :content
+
+  .controls
+    %button.submit.round-icon{:type => "submit"}
+      = image_tag "clip.png"

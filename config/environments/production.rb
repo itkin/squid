@@ -61,6 +61,12 @@ Squid2::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  # Uncomment this to test e-mails in development mode
+  config.action_mailer.delivery_method = :sendmail #:test
+  config.action_mailer.default_url_options = {
+    :host => "squid-corp.com"
+  }
+
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5

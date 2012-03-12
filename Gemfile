@@ -13,7 +13,7 @@ gem 'json'
 # in production environments by default.
 gem "haml"
 gem "twitter-bootstrap-rails"
-
+gem 'nokogiri'
 group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
@@ -21,7 +21,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+#gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
