@@ -59,45 +59,9 @@
         = render :partial => "messages/form", :locals => { :message => @message }
       .span6
         %ul.unstyled
-          %li
-            %span.round-icon= image_tag "mail-little.png", :class => "mail"
-            %span contact@squid-corp.com
-          %li
-            %span.round-icon= image_tag "phone-little.png", :class => "phone"
-            %span 06 50 49 81 74
-          %li
-            %span.round-icon= image_tag "plot-little.png", :class => "plot"
-            %span
-              80, rue du dessous des berges
-              %br/
-              75013 Paris
-          %li
-            %span.round-icon= image_tag "tweeter-little.png", :class => "tweeter"
-            %span @squid_corp
-          %li
-            %span.round-icon= image_tag "facebook-little.png", :class => "facebook"
-            %span www.facebook/squidcorp
-          %li
-            %span.round-icon= image_tag "vimeo-little.png", :class => "vimeo"
-            %span www.vimeo.com/squidcorp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          = contact_item("email")
+          = contact_item("phone")
+          = contact_item("address")
+          = contact_item("tweeter")
+          = contact_item("facebook")
+          = contact_item("vimeo")

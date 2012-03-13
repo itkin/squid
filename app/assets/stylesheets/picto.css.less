@@ -33,13 +33,22 @@
     background-image: url("infos-mini.png");
   }
 }
+[class^="picto-contact"],
+[class*=" picto-contact"]{
+  &.picto-mini{
+    background-image: url("boutons_contact_base.png");
+    &.picto-blue {
+      background-image: url("boutons_contact_survol.png");
+    }
+  }
+}
 
 .picto-info-square  { background-position: 0          0;         }
-.picto-info-people  { background-position: -200px      0;         }
-.picto-info-pencils { background-position: -400px      0;         }
-.picto-info-wheel   { background-position: -600px      0;         }
-.picto-info-earth   { background-position: -800px      0;         }
-.picto-info-coeur   { background-position: -1000px      0;         }
+.picto-info-people  { background-position: -200px     0;         }
+.picto-info-pencils { background-position: -400px     0;         }
+.picto-info-wheel   { background-position: -600px     0;         }
+.picto-info-earth   { background-position: -800px     0;         }
+.picto-info-coeur   { background-position: -1000px    0;         }
 
 .picto-service-chair   { background-position: 0        0;            }
 .picto-service-cube  { background-position: -200px     0   ;         }
@@ -63,6 +72,13 @@
 .picto-mini.picto-service-camera   { background-position: -150px      0;         }
 .picto-mini.picto-service-movie   { background-position: -200px      0;         }
 .picto-mini.picto-service-light   { background-position: -250px      0;         }
+
+.picto-mini.picto-contact-email  { background-position: 0          0;         }
+.picto-mini.picto-contact-phone  { background-position: -50px          0;         }
+.picto-mini.picto-contact-address  { background-position: -100px          0;         }
+.picto-mini.picto-contact-tweeter  { background-position: -150px       0;         }
+.picto-mini.picto-contact-facebook  { background-position: -200px          0;         }
+.picto-mini.picto-contact-vimeo  { background-position: -250px 0;         }
 
 
 /*.icon-white {*/
