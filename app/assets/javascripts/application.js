@@ -20,6 +20,11 @@
         $this.replaceWith(xhr.responseText);
       })
     });
+
+    $('.round').hover(function(e){
+      $(this).find('i.picto-blue').fadeToggle();
+    })
+
     $('.feature-slider').click(function(e){
       var $this = $(this);
       e.stopImmediatePropagation();

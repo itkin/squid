@@ -2,8 +2,7 @@
 
 @import "bootstrap_overrides.css.less";
 @import "twitter/bootstrap/mixins";
-
-
+@import "picto.css.less";
 
 /*@media (min-width: 1200px) {*/
   /*.brand{*/
@@ -117,15 +116,15 @@ body{
     .row{
       padding-top: 30px;
       .span4{
-        color: white;
-        .round {
-          img{
-            margin-top: 55px;
-            &#people  { margin-left: -8px;                    }
-            &#pencils { margin-left: -11px; margin-top: 48px; }
-            &#wheel   { margin-left: 0px; margin-top: 35px;   }
-            &#earth   { margin-left: -9px; margin-top: 31px; }
-            &#coeur   { margin-left: -10px; margin-top: 55px; }
+        .round{
+          position: relative;
+          color: @grayLight;
+          i{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
           }
         }
       }
@@ -238,6 +237,7 @@ body{
   .feature-slider{
     &.opened a.title{
       color: @blue;
+      text-shadow: 3px 3px 6px darken(#202020,30%);
       &:hover {
         color: lighten(@blue, 30%);
       }
@@ -248,10 +248,6 @@ body{
     display:block;
     cursor: pointer;
     text-align: center;
-    .transition(color .5s);
-    &:focus{
-      color: @grayLight
-    }
   }
   .picto{
     height: 40px;
