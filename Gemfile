@@ -11,7 +11,7 @@ gem 'json'
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem "haml"
+gem "haml-rails"
 gem "twitter-bootstrap-rails"
 gem 'nokogiri'
 group :assets do
