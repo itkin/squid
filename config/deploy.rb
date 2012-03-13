@@ -56,6 +56,6 @@ end
 
 #before 'deploy:assets:precompile', :copy_production_configurations
 
-#after "deploy:update_code", :remove_config_ru
+after "deploy:update_code", :remove_config_ru
 
 #before 'deploy:restart', 'compile_static_pages'
