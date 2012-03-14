@@ -9,4 +9,8 @@ module ApplicationHelper
     render :partial => "contact_item", :locals => {:key => key}
   end
 
+  def separator(key)
+    render :partial => "separator", :locals => {:key => key}
+  end
+
 end

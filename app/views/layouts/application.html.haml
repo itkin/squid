@@ -27,6 +27,9 @@
 
     #about.container
       .row
+        .span12
+          = separator("about.separator")
+      .row
         = feature("left", "picto-info-square", "first_block.first_row.left")
         = feature("center", "picto-info-people", "first_block.first_row.center")
         = feature("right", "picto-info-pencils", "first_block.first_row.right")
@@ -35,6 +38,9 @@
         = feature("center", "picto-info-earth", "first_block.second_row.center")
         = feature("right", "picto-info-coeur", "first_block.second_row.right")
     #service.container
+      .row
+        .span12
+          = separator("services.separator")
       .row
         = feature("left", "picto-service-chair", "second_block.first_row.left")
         = feature("center", "picto-service-cube", "second_block.first_row.center")
