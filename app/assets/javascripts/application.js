@@ -5,7 +5,10 @@
 (function($){
   $(document).ready(function(){
 
-    $("#menu a").click(function(e){
+    var ua = navigator.userAgent,
+        click = (ua.match(/iPad/i)) ? "touchstart" : "click";
+
+    $("#menu a").bind(click, function(e){
       e.preventDefault();
       $('html,body').animate({scrollTop:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
     });
@@ -42,7 +45,7 @@
       $(this).find('i.picto-blue').fadeToggle();
     })
 
-    $('.feature-slider').click(function(e){
+    $('.feature-slider').bind(click,function(e){
       var $this = $(this);
       e.stopImmediatePropagation();
       e.preventDefault();
@@ -55,7 +58,7 @@
       }
 
 
-      $("body").one('click', function(e){
+      $("body").one(click, function(e){
         $this.animate({marginTop: "0"})
         $this.removeClass("opened")
       })
