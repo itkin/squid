@@ -2,6 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  home:
+    video_id: "31714905"
+    title: "tellement on kiffe, on le ferait gratos"
+    sub_title: "lorem ipsum dolor sit amet"
   first_block:
     first_row:
       left:
@@ -46,11 +50,16 @@ en:
         description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
 
   contact:
-    email: "contact@squid-corp.com"
-    phone:  "06 50 49 81 74"
-    address:  "80, rue du dessous des berges <br/> 75013 PARIS"
-    tweeter: "@squid_corp"
-    facebook: "www.facebook.com/squidcorp"
+    title: "Commencons à travailler
+               <strong> ensemble</strong>
+               <br/>
+               Contacter
+               <strong> Nous</strong>"
+    info: "Nous vous répondrons sous 24h."
+    menu:
+      email: "contact@squid-corp.com"
+      phone:  "06 50 49 81 74"
+      address:  "80, rue du dessous des berges <br/> 75013 PARIS"
+      tweeter: "@squid_corp"
+      facebook: "www.facebook.com/squidcorp"
 
-  home:
-    video_id: "31714905"

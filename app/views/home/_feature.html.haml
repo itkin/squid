@@ -5,7 +5,7 @@
         %i{:class => class_name}
         %i{:class => "#{class_name} picto-blue", :style => "display:none"}
         -#= image_tag "#{elt_id}.png", :id => elt_id
-      %a.title= t("#{key}.title")
+      %a.title!= t("#{key}.title")
       .picto-mini{:class => class_name}
       .description
         %p!= t("#{key}.description")

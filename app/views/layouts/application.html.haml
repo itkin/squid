@@ -18,8 +18,8 @@
     .row-fluid
       .span12
         #titles
-          %h1 tellement on kiffe, on le ferait gratos
-          %h2 lorem ipsum dolor sit amet
+          %h1= t("home.title")
+          %h2= t("home.sub_title")
         #blue-vertical-line
         #play-button
           %i
@@ -66,14 +66,9 @@
   #contact.container
     .row
       .span6
-        %h3
-          Commencons à travailler
-          %strong ensemble
-          %br/
-          Contacter
-          %strong Nous
+        %h3!= t("contact.title")
 
-        .info-block Nous vous répondrons sous 24h.
+        .info-block!= t("contact.info")
       .span6
     .row
       .span6
