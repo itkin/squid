@@ -29,6 +29,9 @@ body{
   padding:0;
   position:relative;
   background: image-url('background_2.png') left top repeat;
+  *{
+    -webkit-tap-highlight-color: transparent;
+  }
   a {
     cursor: pointer;
     text-decoration: none !important;
@@ -228,6 +231,7 @@ body{
     }
     form{
       margin-right: 50px;
+      margin-bottom: 100px;
       float: right;
       label{
        color: @grayLight;
