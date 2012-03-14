@@ -6,49 +6,49 @@ en:
     first_row:
       left:
         title:        Nous créons des images numériques
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        description:  Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... nous maîtrisons le support et la technique les mieux adaptés à vos besoins.
       center:
         title:        Nous sommes un collectif de graphistes indépendants.
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        description:  Nous associons la réactivité d'un freelance, la flexibilité d'un collectif et le sérieux d'un studio. Organisés autour d'un noyau, nous ajustons nos équipes aux besoins de chaque projet.
       right:
         title:        Nous sommes une corporation pluridiscilinaire
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        description:  Nous disposons d’un annuaire riche de graphistes et de créatifs talentueux.
     second_row:
       left:
         title:        Nous assurons l'ensemble de la production
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        description:  Nous connaissons l’importance d’un film réussi. Vous avez un projet précis, nous le réalisons. Vous avez un produit à mettre en valeur, nous assurons toute la chaîne de production.
       center:
-        title:        Nous sommes mobiles
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title:        Nous sommes connectés
+        description:  La fibre optique, l’informatique portable et les solutions logicielles de pointe sont les meilleurs outils de notre coopération mobile. Nous collaborons avec nos clients avec la même facilité qu’à domicile. Et vous êtes toujours les bienvenus.
       right:
-        title:        Nous sommes expérimentés et passionnés
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title:        Nous sommes expérimentés <br/> Et passionnés
+        description:  Nous évoluons dans le monde du long-métrage, de la publicité, du jeu vidéo, de la télévision, de la communication et de l’évènementiel, depuis de nombreuses années. Nous aimons échanger, créer, raconter : mettre à votre service notre savoir-faire.
   second_block:
     first_row:
       left:
-        title:        Nous créons des images numériques
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title:        réalisation
+        description:  pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>
       center:
-        title:        Nous sommes un collectif de graphistes indépendants.
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title:        3d
+        description:  pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>
       right:
-        title:        Nous sommes une corporation pluridiscilinaire
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title:        2d
+        description:  pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>
     second_row:
       left:
-        title:        Nous assurons l'ensemble de la production
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title:        tournage
+        description:  pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>
       center:
-        title:        Nous sommes mobiles
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title:        effets visuels
+        description:  pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>
       right:
-        title:        Nous sommes expérimentés et passionnés
-        description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title:        tout ce que vous imaginez
+        description:  pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>
 
   contact:
-    email: email
-    phone:  phone
-    address:  address
-    tweeter: tweeter
-    facebook: facebook
-    vimeo: vimeo
+    email: contact@squid-corp.com
+    phone:  06 50 49 81 74
+    address:  80, rue du dessous des berges <br/> 75013 PARIS
+    tweeter: @squid_corp
+    facebook: www.facebook.com/squidcorp
+    vimeo: www.vimeo.com/squidcorp
