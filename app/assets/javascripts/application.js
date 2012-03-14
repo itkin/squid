@@ -21,8 +21,8 @@
       })
     });
 
-    $('.round').hover(function(e){
-      $(this).find('i.picto-blue').fadeToggle();
+    $('.feature').hover(function(e){
+      $(this).find('i.picto-blue').fadeToggle(1000);
     })
 
     $('#contact ul li').hover(function(e){
@@ -33,11 +33,11 @@
       var $this = $(this);
       e.stopImmediatePropagation();
       e.preventDefault();
-      if ($(e.target).hasClass('title') && $this.css('marginTop') == "-216px"){
+      if ($(e.target).hasClass('title') && $this.css('marginTop') == "-241px"){
         $this.animate({marginTop: "0"})
         $this.removeClass("opened")
       } else {
-        $this.animate({marginTop: "-216px"});
+        $this.animate({marginTop: "-241px"});
         $this.addClass("opened")
       }
 

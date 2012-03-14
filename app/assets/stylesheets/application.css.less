@@ -44,7 +44,7 @@ body{
       padding: 0;
       margin-left: -200px;
     }
-    background: image-url('header.png') left top repeat-x;
+    background: image-url('header.png') left bottom repeat-x;
     .box-shadow(none);
     .box-shadow(0 5px 20px 1px #131313);
     height: 99px;
@@ -116,15 +116,65 @@ body{
     .row{
       padding-top: 30px;
       .span4{
-        .round{
+        .feature{
+          &.center{
+            .center-block();
+          }
+          &.left{
+            float: left;
+          }
+          &.right{
+            float: right;
+          }
+          text-align: center;
           position: relative;
-          color: @grayLight;
-          i{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
+          overflow: hidden;
+          width: 235px;
+          height: 225 + 20 + 40px;
+          margin-bottom: 10px;
+          .feature-slider{
+            &:hover a.title{
+              color: @white;
+              text-shadow: 3px 3px 6px darken(#202020,30%);
+            }
+            &.opened a.title{
+              color: @blue;
+              text-shadow: 3px 3px 6px darken(#202020,30%);
+            }
+            .round{
+              position: relative;
+              color: @grayLight;
+              i{
+                position: absolute;
+                left: 12.5px;
+                top: 12.5px;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            a.title{
+              .transition(text-shadow 1s);
+              .transition(color 1s);
+            }
+          }
+          .title{
+            height: 40px;
+            display:block;
+            cursor: pointer;
+            text-align: center;
+          }
+          .picto{
+            height: 40px;
+
+          }
+          .description {
+            text-align: center ;
+            height: 186px;
+            overflow-y: auto;
+            p{
+              margin: 1em;
+              margin-top: 5px;
+            }
           }
         }
       }
@@ -216,61 +266,19 @@ body{
 }
 .round {
   .center-block();
+  position: relative;
   cursor: pointer;
-  height: 196px;
-  width: 196px;
+  height: 225px;
+  width: 225px;
   background: #202020;
   margin-bottom: 20px;
-  .border-radius(96px);
+  .border-radius(112px);
   box-shadow: 2px 1px 6px 0 darken(#202020,30%) inset, 2px 1px 6px 0 #3a3a3a;
-}
-
-.feature{
-  &.center{
-    .center-block();
-  }
-  &.left{
-    float: left;
-  }
-  &.right{
-    float: right;
-  }
-
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  width: 220px;
-  height: 196 + 20 + 40px;
-  margin-bottom: 10px;
-  .feature-slider{
-    a.title{
-      .transition(color 1s);
-    }
-    &.opened a.title{
-      color: @blue;
-      text-shadow: 3px 3px 6px darken(#202020,30%);
-      &:hover {
-        color: lighten(@blue, 30%);
-      }
-    }
-  }
-  .title{
-    height: 40px;
-    display:block;
-    cursor: pointer;
-    text-align: center;
-  }
-  .picto{
-    height: 40px;
-
-  }
-  .description {
-    text-align: center ;
-    height: 186px;
-    overflow-y: auto;
-    p{
-      margin: 1em;
-      margin-top: 5px;
-    }
+  i{
+    position: absolute ;
+    left: 12.5px;
+    top: 12.5px
   }
 }
+
+
