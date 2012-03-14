@@ -251,12 +251,12 @@ body{
         .round-icon{
           margin-right: 20px;
         }
-        span{
+        span.phone, a{
           .inline-block();
-        }
-        .transition(color 1s);
-        &:hover, &:hover a{
-          color: @blue;
+          .transition(color 1s);
+          &:hover{
+            color: @blue;
+          }
         }
       }
     }

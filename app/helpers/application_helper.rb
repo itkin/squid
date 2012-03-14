@@ -5,8 +5,8 @@ module ApplicationHelper
     render :partial => "home/feature", :locals => {:position => position, :key => key, :class_name => class_name }
   end
 
-  def contact_item(key)
-    render :partial => "contact_item", :locals => {:key => key}
+  def contact_item(key, &block)
+    render :partial => "contact_item", :locals => {:key => key, :block => capture(&block)}
   end
 
   def separator(key)

@@ -66,6 +66,11 @@ en:
       email: "contact@squid-corp.com"
       phone:  "06 50 49 81 74"
       address:  "80, rue du dessous des berges <br/> 75013 PARIS"
+      address_link: "#"
       tweeter: "@squid_corp"
+      tweeter_link: "#"
       facebook: "www.facebook.com/squidcorp"
+      facebook_link: "#"
+      vimeo: "www.facebook.com/squidcorp"
+      vimeo_link:    "#"
 

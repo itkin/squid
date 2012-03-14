@@ -78,9 +78,21 @@
         = render :partial => "messages/form", :locals => { :message => @message }
       .span6
         %ul.unstyled
-          = contact_item("email")
-          = contact_item("phone")
-          = contact_item("address")
-          = contact_item("tweeter")
-          = contact_item("facebook")
-          = contact_item("vimeo")
+          = contact_item("email") do
+            = mail_to t("contact.menu.email")
+
+          = contact_item("phone") do
+            %span.phone!=t("contact.menu.phone")
+
+          = contact_item("address") do
+            = link_to(t("contact.menu.address_link")) do
+              != t("contact.menu.address")
+
+          = contact_item('tweeter') do
+            = link_to t("contact.menu.tweeter"), t("contact.menu.tweeter_link")
+
+          = contact_item('facebook') do
+            = link_to t("contact.menu.facebook"), t("contact.menu.facebook_link")
+
+          = contact_item("vimeo") do
+            = link_to t("contact.menu.vimeo"), t("contact.menu.vimeo_link")
