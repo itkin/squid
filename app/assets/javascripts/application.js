@@ -7,8 +7,7 @@
 
     $("#menu a").click(function(e){
       e.preventDefault();
-      var offset = 0 //parseInt($('#home').css('marginTop').replace('px',''))
-      $("body").animate({scrollTop: $($(this).attr("href")).offset()['top'] - offset}, 2000, "easeInOutExpo")
+      $('html,body').animate({scrollTop:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
     });
 
     $('body').on('submit','form', function(e){
@@ -20,6 +19,20 @@
         $this.replaceWith(xhr.responseText);
       })
     });
+    $('#play-button').hover(function(e){
+      $(this).find('i.blue').fadeToggle(1000);
+    }).click(function(e){
+      e.preventDefault();
+      var $modal = $("#demo.modal"),
+          width = 613,
+          height = 322,
+          marginLeft =  613 / 2 ;
+
+      $modal.css({overflow: "hidden", width: (width + 32 )+ 'px', height: (height + 32)+ 'px', marginLeft: '-' + marginLeft + 'px' });
+      $modal.find('.modal-body').html('<iframe src="http://player.vimeo.com/video/'+$modal.attr('data-target-id') + '?title=0&amp;portrait=0&amp;autoplay=1" width="'+width+'" height="'+ height +'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
+      $modal.modal();
+
+    })
 
     $('.feature').hover(function(e){
       $(this).find('i.picto-blue').fadeToggle(1000);

@@ -26,7 +26,8 @@ h1,h2,h3{
   margin-top: 100px;
 }
 body{
-  padding-top: 99px;
+  padding:0;
+  position:relative;
   background: image-url('background_2.png') left top repeat;
   a {
     cursor: pointer;
@@ -76,14 +77,14 @@ body{
   }
 
   #home{
-    margin-top: 0;
+    margin-top: 97px;
     background: image-url('jewels.png') left top repeat-x;
     .background-size(cover);
     text-align: center;
     #titles{
       text-align: center;
       h1{
-        margin-top: 170px;
+        margin-top: 100px;
         color: white;
       }
       h2{
@@ -100,16 +101,31 @@ body{
       width: 50%;
       height: 80px;
       border-right: .5px solid @blue;
-      margin-bottom: 10px;
       position: relative;
       right: 1px;
     }
-    .round{
-      margin-bottom: 150px;
-      img{
-        margin-top: 65px;
-        margin-left: 30px;
+    #play-button{
+      width: 200px;
+      height: 200px ;
+      .center-block();
+      position:relative;
+      bottom: 20px;
+      cursor: pointer;
+      i{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: image-url("lecture_base.png") left top no-repeat;
+        &.blue{
+          background-image: image-url("lecture_survol.png");
+        }
       }
+    }
+    #watch-demo{
+      margin-top: -20px;
+      margin-bottom: 60px;
     }
   }
   #about, #service{
@@ -125,7 +141,7 @@ body{
         font-size: 20px;
       }
       text-align: center;
-
+      padding-bottom: 10px;
     }
     .row{
       padding-top: 30px;
@@ -205,8 +221,8 @@ body{
     }
     .info-block {
       margin-right: 50px;
-      margin-top: 36px;
-      margin-bottom: 50px;
+      margin-top: 26px;
+      margin-bottom: 30px;
       font-size: 90%;
       text-align: right;
     }
@@ -222,7 +238,7 @@ body{
         img { margin-left: 5px; margin-top: 6px; }
       }
       textarea{
-        height: 240px;
+        height: 140px;
       }
       input[type="text"], textarea{
         background: #202020;
@@ -243,7 +259,7 @@ body{
       position: relative;
       bottom: 20px;
       li{
-        padding: 15px 0;
+        padding: 12px 0;
         .round-icon{
           margin-right: 20px;
         }

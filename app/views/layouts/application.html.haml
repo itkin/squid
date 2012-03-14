@@ -3,72 +3,86 @@
   = stylesheet_link_tag "bootstrap", "application"
   = javascript_include_tag "application"
   = csrf_meta_tags
--#%body(data-spy="scroll" data-offset="99")
-%body
-  #page
-    #header.navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          = link_to "#", :class => "brand" do
-            = image_tag "logo.png"
-          %ul#menu.nav.nav-pills.pull-right
-            %li= link_to "accueil", "#home"
-            %li= link_to "squid?", "#about"
-            %li= link_to "services", "#service"
-            %li= link_to "contact" , "#contact"
-    #home.container-fluid
-      .row-fluid
-        .span12
-          #titles
-            %h1 tellement on kiffe, on le ferait gratos
-            %h2 lorem ipsum dolor sit amet
-          #blue-vertical-line
-          .round= image_tag "lecture.png", :id => "lecture"
+%body(data-spy="scroll" data-offset="99")
+  #header.navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        = link_to "#", :class => "brand" do
+          = image_tag "logo.png"
+        %ul#menu.nav.nav-pills.pull-right
+          %li= link_to "accueil", "#home"
+          %li= link_to "squid?", "#about"
+          %li= link_to "services", "#service"
+          %li= link_to "contact" , "#contact"
+  #home.container-fluid
+    .row-fluid
+      .span12
+        #titles
+          %h1 tellement on kiffe, on le ferait gratos
+          %h2 lorem ipsum dolor sit amet
+        #blue-vertical-line
+        #play-button
+          %i
+          %i.blue{:style => "display:none"}
+        #watch-demo
+          = t("home.watch_demo")
 
-    #about.container
-      .row
-        .span12
-          = separator("about.separator")
-      .row
-        = feature("left", "picto-info-square", "first_block.first_row.left")
-        = feature("center", "picto-info-people", "first_block.first_row.center")
-        = feature("right", "picto-info-pencils", "first_block.first_row.right")
-      .row
-        = feature("left", "picto-info-wheel", "first_block.second_row.left")
-        = feature("center", "picto-info-earth", "first_block.second_row.center")
-        = feature("right", "picto-info-coeur", "first_block.second_row.right")
-    #service.container
-      .row
-        .span12
-          = separator("services.separator")
-      .row
-        = feature("left", "picto-service-chair", "second_block.first_row.left")
-        = feature("center", "picto-service-cube", "second_block.first_row.center")
-        = feature("right", "picto-service-draw", "second_block.first_row.right")
-      .row
-        = feature("left", "picto-service-camera", "second_block.second_row.left")
-        = feature("center", "picto-service-movie", "second_block.second_row.center")
-        = feature("right", "picto-service-light", "second_block.second_row.right")
-    #contact.container
-      .row
-        .span6
-          %h3
-            Commencons à travailler
-            %strong ensemble
-            %br/
-            Contacter
-            %strong Nous
+        #demo.modal.fade{:style =>"display:none", "data-target-id" => t("home.video_id") }
+          -#.modal-header
+          -#  %a.close(data-dismiss="modal") ×
+          -#  %h3 Modal header
 
-          .info-block Nous vous répondrons sous 24h.
-        .span6
-      .row
-        .span6
-          = render :partial => "messages/form", :locals => { :message => @message }
-        .span6
-          %ul.unstyled
-            = contact_item("email")
-            = contact_item("phone")
-            = contact_item("address")
-            = contact_item("tweeter")
-            = contact_item("facebook")
-            = contact_item("vimeo")
+          .modal-body
+            -#%iframe{:src=>"http://player.vimeo.com/video/#{t("home.video_id")}" , :frameborder=>"0"}
+
+          -#.modal-footer
+          -#  <a href="#" class="btn">Close</a>
+          -#  <a href="#" class="btn btn-primary">Save changes</a>
+
+  #about.container
+    .row
+      .span12
+        = separator("about.separator")
+    .row
+      = feature("left", "picto-info-square", "first_block.first_row.left")
+      = feature("center", "picto-info-people", "first_block.first_row.center")
+      = feature("right", "picto-info-pencils", "first_block.first_row.right")
+    .row
+      = feature("left", "picto-info-wheel", "first_block.second_row.left")
+      = feature("center", "picto-info-earth", "first_block.second_row.center")
+      = feature("right", "picto-info-coeur", "first_block.second_row.right")
+  #service.container
+    .row
+      .span12
+        = separator("services.separator")
+    .row
+      = feature("left", "picto-service-chair", "second_block.first_row.left")
+      = feature("center", "picto-service-cube", "second_block.first_row.center")
+      = feature("right", "picto-service-draw", "second_block.first_row.right")
+    .row
+      = feature("left", "picto-service-camera", "second_block.second_row.left")
+      = feature("center", "picto-service-movie", "second_block.second_row.center")
+      = feature("right", "picto-service-light", "second_block.second_row.right")
+  #contact.container
+    .row
+      .span6
+        %h3
+          Commencons à travailler
+          %strong ensemble
+          %br/
+          Contacter
+          %strong Nous
+
+        .info-block Nous vous répondrons sous 24h.
+      .span6
+    .row
+      .span6
+        = render :partial => "messages/form", :locals => { :message => @message }
+      .span6
+        %ul.unstyled
+          = contact_item("email")
+          = contact_item("phone")
+          = contact_item("address")
+          = contact_item("tweeter")
+          = contact_item("facebook")
+          = contact_item("vimeo")
