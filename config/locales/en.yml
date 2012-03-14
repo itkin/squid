@@ -54,9 +54,9 @@ en:
         description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
 
   about:
-    separator: "lol"
+    separator: "qui nous sommes"
   services:
-    separator: "lol"
+    separator: "ce que nous faisons"
   contact:
     separator: "Commencons à travailler <strong> ensemble</strong>, contactez <strong> nous</strong>"
     title: ""
@@ -66,11 +66,11 @@ en:
       email: "contact@squid-corp.com"
       phone:  "06 50 49 81 74"
       address:  "80, rue du dessous des berges <br/> 75013 PARIS"
-      address_link: "#"
+      address_link: "http://maps.google.fr/maps?f=q&source=s_q&hl=fr&geocode=&q=80,+rue+du+dessous+des+berges&aq=&sll=46.75984,1.738281&sspn=10.087752,17.709961&vpsrc=0&ie=UTF8&hq=&hnear=80+Rue+du+Dessous+des+Berges,+75013+Paris,+Île-de-France&t=m&z=16&iwloc=A"
       tweeter: "@squid_corp"
-      tweeter_link: "#"
+      tweeter_link: "http://www.twitter.com/squid_corp"
       facebook: "www.facebook.com/squidcorp"
-      facebook_link: "#"
+      facebook_link: "http://www.facebook.com/squidcorp"
       vimeo: "www.facebook.com/squidcorp"
-      vimeo_link:    "#"
+      vimeo_link:    "http://www.vimeo.com/squidcorp"
 
