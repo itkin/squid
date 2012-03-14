@@ -44,3 +44,11 @@ en:
       right:
         title:        Nous sommes expérimentés et passionnés
         description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  contact:
+    email: email
+    phone:  phone
+    address:  address
+    tweeter: tweeter
+    facebook: facebook
+    vimeo: vimeo

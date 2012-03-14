@@ -5,63 +5,64 @@
   = csrf_meta_tags
 -#%body(data-spy="scroll" data-offset="99")
 %body
-  #header.navbar.navbar-fixed-top
-    .navbar-inner
-      .container
-        = link_to "#", :class => "brand" do
-          = image_tag "logo.png"
-        %ul#menu.nav.nav-pills.pull-right
-          %li= link_to "accueil", "#home"
-          %li= link_to "squid?", "#about"
-          %li= link_to "services", "#service"
-          %li= link_to "contact" , "#contact"
-  #home.container-fluid
-    .row-fluid
-      .span12
-        #titles
-          %h1 tellement on kiffe, on le ferait gratos
-          %h2 lorem ipsum dolor sit amet
-        #blue-vertical-line
-        .round= image_tag "lecture.png", :id => "lecture"
+  #page
+    #header.navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          = link_to "#", :class => "brand" do
+            = image_tag "logo.png"
+          %ul#menu.nav.nav-pills.pull-right
+            %li= link_to "accueil", "#home"
+            %li= link_to "squid?", "#about"
+            %li= link_to "services", "#service"
+            %li= link_to "contact" , "#contact"
+    #home.container-fluid
+      .row-fluid
+        .span12
+          #titles
+            %h1 tellement on kiffe, on le ferait gratos
+            %h2 lorem ipsum dolor sit amet
+          #blue-vertical-line
+          .round= image_tag "lecture.png", :id => "lecture"
 
-  #about.container
-    .row
-      = feature("left", "picto-info-square", "first_block.first_row.left")
-      = feature("center", "picto-info-people", "first_block.first_row.center")
-      = feature("right", "picto-info-pencils", "first_block.first_row.right")
-    .row
-      = feature("left", "picto-info-wheel", "first_block.second_row.left")
-      = feature("center", "picto-info-earth", "first_block.second_row.center")
-      = feature("right", "picto-info-coeur", "first_block.second_row.right")
-  #service.container
-    .row
-      = feature("left", "picto-service-chair", "second_block.first_row.left")
-      = feature("center", "picto-service-cube", "second_block.first_row.center")
-      = feature("right", "picto-service-draw", "second_block.first_row.right")
-    .row
-      = feature("left", "picto-service-camera", "second_block.second_row.left")
-      = feature("center", "picto-service-movie", "second_block.second_row.center")
-      = feature("right", "picto-service-light", "second_block.second_row.right")
-  #contact.container
-    .row
-      .span6
-        %h3
-          Commencons à travailler
-          %strong ensemble
-          %br/
-          Contacter
-          %strong Nous
+    #about.container
+      .row
+        = feature("left", "picto-info-square", "first_block.first_row.left")
+        = feature("center", "picto-info-people", "first_block.first_row.center")
+        = feature("right", "picto-info-pencils", "first_block.first_row.right")
+      .row
+        = feature("left", "picto-info-wheel", "first_block.second_row.left")
+        = feature("center", "picto-info-earth", "first_block.second_row.center")
+        = feature("right", "picto-info-coeur", "first_block.second_row.right")
+    #service.container
+      .row
+        = feature("left", "picto-service-chair", "second_block.first_row.left")
+        = feature("center", "picto-service-cube", "second_block.first_row.center")
+        = feature("right", "picto-service-draw", "second_block.first_row.right")
+      .row
+        = feature("left", "picto-service-camera", "second_block.second_row.left")
+        = feature("center", "picto-service-movie", "second_block.second_row.center")
+        = feature("right", "picto-service-light", "second_block.second_row.right")
+    #contact.container
+      .row
+        .span6
+          %h3
+            Commencons à travailler
+            %strong ensemble
+            %br/
+            Contacter
+            %strong Nous
 
-        .info-block Nous vous répondrons sous 24h.
-      .span6
-    .row
-      .span6
-        = render :partial => "messages/form", :locals => { :message => @message }
-      .span6
-        %ul.unstyled
-          = contact_item("email")
-          = contact_item("phone")
-          = contact_item("address")
-          = contact_item("tweeter")
-          = contact_item("facebook")
-          = contact_item("vimeo")
+          .info-block Nous vous répondrons sous 24h.
+        .span6
+      .row
+        .span6
+          = render :partial => "messages/form", :locals => { :message => @message }
+        .span6
+          %ul.unstyled
+            = contact_item("email")
+            = contact_item("phone")
+            = contact_item("address")
+            = contact_item("tweeter")
+            = contact_item("facebook")
+            = contact_item("vimeo")

@@ -5,11 +5,11 @@
 (function($){
   $(document).ready(function(){
 
-//    $("#menu a").click(function(e){
-//      e.preventDefault();
-//      var offset = 0 //parseInt($('#home').css('marginTop').replace('px',''))
-//      $("body").animate({scrollTop: $($(this).attr("href")).offset()['top'] - offset}, 2000, "easeInOutExpo")
-//    });
+    $("#menu a").click(function(e){
+      e.preventDefault();
+      var offset = 0 //parseInt($('#home').css('marginTop').replace('px',''))
+      $("body").animate({scrollTop: $($(this).attr("href")).offset()['top'] - offset}, 2000, "easeInOutExpo")
+    });
 
     $('body').on('submit','form', function(e){
       e.preventDefault();
