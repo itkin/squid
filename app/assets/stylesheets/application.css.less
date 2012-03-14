@@ -152,6 +152,7 @@ body{
           height: 225 + 20 + 40px;
           margin-bottom: 20px;
           .feature-slider{
+            cursor: pointer;
             &:hover a.title{
               color: @white;
               text-shadow: 3px 3px 6px darken(#202020,30%);
@@ -200,13 +201,10 @@ body{
     }
   }
   #contact{
+    padding-top: 30px;
     h3{
       margin-right: 50px;
       text-align: right;
-      strong{
-        font-weight: normal;
-        color: @blue;
-      }
     }
     .info-block {
       margin-right: 50px;
@@ -228,7 +226,7 @@ body{
         img { margin-left: 5px; margin-top: 6px; }
       }
       textarea{
-        height: 140px;
+        height: 122px;
       }
       input[type="text"], textarea{
         background: #202020;
@@ -249,7 +247,7 @@ body{
       position: relative;
       bottom: 20px;
       li{
-        padding: 12px 0;
+        padding: 10px 0;
         .round-icon{
           margin-right: 20px;
         }
@@ -319,4 +317,8 @@ body{
   }
   text-align: center;
   padding-bottom: 10px;
+}
+strong{
+  font-weight: normal;
+  color: @blue;
 }

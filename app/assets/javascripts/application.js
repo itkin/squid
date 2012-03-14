@@ -42,23 +42,23 @@
       $(this).find('i.picto-blue').fadeToggle(1000);
     })
 
-    $('.feature-slider').bind(click,function(e){
+    $('body').on(click,"div.feature-slider", function(e){
       var $this = $(this);
-      e.stopImmediatePropagation();
       e.preventDefault();
-      if ($(e.target).hasClass('title') && $this.css('marginTop') == "-241px"){
+      console.log(this);
+      //e.stopImmediatePropagation();
+      if ($this.hasClass('opened')){
         $this.animate({marginTop: "0"})
         $this.removeClass("opened")
       } else {
         $this.animate({marginTop: "-241px"});
         $this.addClass("opened")
+        $("body").one(click, function(e){
+          $this.animate({marginTop: "0"})
+          $this.removeClass("opened")
+        })
       }
 
-
-      $("body").one(click, function(e){
-        $this.animate({marginTop: "0"})
-        $this.removeClass("opened")
-      })
 
 //      $(this).closest('.feature-slider').animate({marginTop: "-196px"})
     })

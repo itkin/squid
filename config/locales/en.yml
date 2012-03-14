@@ -58,12 +58,8 @@ en:
   services:
     separator: "lol"
   contact:
-    separator: "lol"
-    title: "Commencons à travailler
-               <strong> ensemble</strong>
-               <br/>
-               Contactez
-               <strong> nous</strong>"
+    separator: "Commencons à travailler <strong> ensemble</strong>, contactez <strong> nous</strong>"
+    title: ""
     info: "Nous vous répondrons sous 24h."
 
     menu:
