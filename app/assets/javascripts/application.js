@@ -22,6 +22,7 @@
         $this.replaceWith(xhr.responseText);
       })
     });
+
     $('#play-button').hover(function(e){
       $(this).find('i.blue').fadeToggle(1000);
     }).click(function(e){
@@ -37,12 +38,8 @@
 
     })
 
-    $('.feature').hover(function(e){
+    $('.feature, #contact ul li, button.submit ').hover(function(e){
       $(this).find('i.picto-blue').fadeToggle(1000);
-    })
-
-    $('#contact ul li').hover(function(e){
-      $(this).find('i.picto-blue').fadeToggle();
     })
 
     $('.feature-slider').bind(click,function(e){

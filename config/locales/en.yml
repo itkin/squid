@@ -8,6 +8,8 @@ en:
     sub_title: "lorem ipsum dolor sit amet"
     watch_demo: "watch demo"
 
+
+
   first_block:
     first_row:
       left:
@@ -51,13 +53,19 @@ en:
         title:        "tout ce que vous imaginez"
         description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
 
+  about:
+    separator: "lol"
+  services:
+    separator: "lol"
   contact:
+    separator: "lol"
     title: "Commencons à travailler
                <strong> ensemble</strong>
                <br/>
                Contacter
                <strong> Nous</strong>"
     info: "Nous vous répondrons sous 24h."
+
     menu:
       email: "contact@squid-corp.com"
       phone:  "06 50 49 81 74"
