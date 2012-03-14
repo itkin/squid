@@ -4,9 +4,9 @@
 en:
   home:
     video_id: "31714905"
-    title: "tellement on kiffe, on le ferait gratos"
-    sub_title: "lorem ipsum dolor sit amet"
-    watch_demo: "watch demo"
+    title: "j'adore quand un plan se déroule sans accroc"
+    sub_title: "fuck you, pay me"
+    watch_demo: "voir notre demoreel"
 
   first_block:
     first_row:
@@ -52,11 +52,11 @@ en:
         description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
 
   contact:
-    title: "Commencons à travailler
+    title: "Commençons à travailler
                <strong> ensemble</strong>
                <br/>
-               Contacter
-               <strong> Nous</strong>"
+               Contactez
+               <strong> nous</strong>"
     info: "Nous vous répondrons sous 24h."
     menu:
       email: "contact@squid-corp.com"
