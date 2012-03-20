@@ -10,13 +10,13 @@ class MessagesMailer < ActionMailer::Base
   def new_contact_email(message)
     @message = message
     mail :from => "Rails <no-reply@squid-corp.com>",
-         :to => ["iomka@me.com", "nicolas@w3bflows.com"]
+         :to => ["contact@squid-corp.com", "nicolas@w3bflows.com"]
   end
 
   def email_no_sent(message)
     @message = message
     mail :from => "Rails <no-reply@squid-corp.com>",
-         :to => ["iomka@me.com", "nicolas@w3bflows.com"]
+         :to => ["contact@squid-corp.com", "nicolas@w3bflows.com"]
 
   end
 end
