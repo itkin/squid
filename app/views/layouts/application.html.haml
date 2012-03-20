@@ -93,8 +93,9 @@
       .span6
         %ul.unstyled
           %li
-            = mail_to t("contact.menu.email") do
+            %a{:href => "mailto:#{t("contact.menu.email")}"}
               = contact_item("email")
+              = t("contact.menu.email")
           %li
             %span.phone
               != contact_item("phone")
