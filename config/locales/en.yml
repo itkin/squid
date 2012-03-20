@@ -8,7 +8,20 @@ en:
     sub_title: "fuck you, pay me"
     watch_demo: "voir notre demoreel"
 
-
+  infos:
+    separator: "lol"
+    title: Nous mélangeons idées, histoires et pixels.
+    sub_title: Et bien d’autres choses encore, like never before.
+    features:
+      first:
+        title: test <strong>lkj</strong>
+        description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
+      second:
+        title: test
+        description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
+      third:
+        title: test
+        description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
 
   first_block:
     first_row:
@@ -53,8 +66,6 @@ en:
         title:        "tout ce que vous imaginez"
         description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
 
-  about:
-    separator: "lol"
   services:
     separator: "lol"
   contact:
