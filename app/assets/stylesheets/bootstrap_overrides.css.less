@@ -3,11 +3,11 @@
 @blue:                  #22c8ff;
 @blueDark:              darken(#0064cd,20%);
 
-@grayLight: #dadada;
+@grayLight: #c0c0c0;
 
 // Links
 @linkColor:             @grayLight;
-@linkColorHover:        @grayLighter;
+@linkColorHover:        @white;
 
 
 // Buttons
@@ -29,10 +29,17 @@
   vertical-align: middle;
   *vertical-align: auto;
 }
+
 h1, h2, h3, h4, h5, h6 {
   color: @grayLight;
 }
-
+.modal{
+  .border-radius(0px);
+}
+.modal-body{
+  background: @blue;
+  padding: 1px;
+}
 
 
 //@media (max-width: 979px) {

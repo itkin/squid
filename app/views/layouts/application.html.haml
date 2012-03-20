@@ -18,16 +18,17 @@
     .row-fluid
       .span12
         #titles
-          %h1= t("home.title")
-          %h2= t("home.sub_title")
+          %h3!= t("home.before_title")
+          %h1!= t("home.title")
         #blue-vertical-line
-        #play-button
-          %i
-          %i.blue{:style => "display:none"}
-        #watch-demo
-          = t("home.watch_demo")
+        #play-button-wrapper
+          #play-button
+            %i
+            %i.blue{:style => "display:none"}
+          %a#watch-demo{:href => "#"}
+            != t("home.watch_demo")
 
-        #demo.modal.fade{:style =>"display:none", "data-target-id" => t("home.video_id") }
+        #demo.modal{:style =>"display:none", "data-target-id" => t("home.video_id") }
           -#.modal-header
           -#  %a.close(data-dismiss="modal") ×
           -#  %h3 Modal header
@@ -91,21 +92,30 @@
         = render :partial => "messages/form", :locals => { :message => @message }
       .span6
         %ul.unstyled
-          = contact_item("email") do
-            = mail_to t("contact.menu.email")
+          %li
+            = mail_to t("contact.menu.email") do
+              = contact_item("email")
+          %li
+            %span.phone
+              != contact_item("phone")
+              != t("contact.menu.phone")
 
-          = contact_item("phone") do
-            %span.phone!=t("contact.menu.phone")
+          %li
+            = link_to(t("contact.menu.address_link"), :target => "_blank") do
+              != contact_item("address")
+              %span!= t("contact.menu.address")
+          %li
+            = link_to t("contact.menu.tweeter_link"), :target => "_blank" do
+              != contact_item('tweeter')
+              != t("contact.menu.tweeter")
 
-          = contact_item("address") do
-            = link_to(t("contact.menu.address_link")) do
-              != t("contact.menu.address")
+          %li
+            = link_to t("contact.menu.facebook_link"), :target => "_blank" do
+              != contact_item('facebook')
+              != t("contact.menu.facebook")
 
-          = contact_item('tweeter') do
-            = link_to t("contact.menu.tweeter"), t("contact.menu.tweeter_link")
+          %li
+            = link_to t("contact.menu.vimeo_link"), :target => "_blank" do
+              != contact_item("vimeo")
+              != t("contact.menu.vimeo")
 
-          = contact_item('facebook') do
-            = link_to t("contact.menu.facebook"), t("contact.menu.facebook_link")
-
-          = contact_item("vimeo") do
-            = link_to t("contact.menu.vimeo"), t("contact.menu.vimeo_link")

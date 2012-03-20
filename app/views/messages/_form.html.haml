@@ -1,15 +1,15 @@
 = bootstrap_form_for message do |f|
 
-  = f.control_group :name do
+  = f.control_group :name, :label => t('contact.form.name') do
     = f.text_field :name
 
-  = f.control_group :email do
+  = f.control_group :email, :label => t('contact.form.email') do
     = f.text_field :email
 
-  = f.control_group :object do
+  = f.control_group :object, :label => t('contact.form.object') do
     = f.text_field :object
 
-  = f.control_group :content do
+  = f.control_group :content, :label => t('contact.form.content') do
     = f.text_area :content
 
   .controls

@@ -12,6 +12,8 @@
     /*margin-right: 30px !important;*/
   /*}*/
 /*}*/
+@textShadow: 4px 4px 6px darken(#202020,30%);
+@titleFontSize: 20px;
 
 @font-face{
   font-family: dinLight ;
@@ -65,7 +67,7 @@ body{
             margin-left: 4ex;
             font-size: 20px;
             font-weight: 100;
-            .transition(color 1s);
+            .transition(color .5s);
             &:hover{
               color: @grayLighter;
             }
@@ -86,16 +88,18 @@ body{
     text-align: center;
     #titles{
       text-align: center;
-      h1{
+      h3{
         margin-top: 100px;
-        color: white;
+        font-size: 200%;
+        text-shadow: @textShadow;
       }
-      h2{
+      h1{
+        text-shadow: @textShadow;
+        margin-top: 60px;
+        color: white;
+        font-size: 300%;
+        line-height: 1.5;
         .inline-block();
-        color: @blue;
-        padding-top: 1em;
-        padding-bottom: 3px;
-        line-height: 30px;
         border-bottom: .5px solid @blue;
       }
     }
@@ -107,28 +111,38 @@ body{
       position: relative;
       right: 1px;
     }
-    #play-button{
-      width: 100px;
-      height: 100px ;
-      .center-block();
-      position:relative;
-      bottom: 10px;
+    #play-button-wrapper{
       cursor: pointer;
-      i{
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: image-url("lecture_base.png") left top no-repeat;
-        &.blue{
-          background-image: image-url("lecture_survol.png");
+      width: 300px;
+      .center-block();
+      &:hover a#watch-demo{
+        color: @blue
+      }
+      #play-button{
+        width: 100px;
+        height: 100px ;
+        .center-block();
+        position:relative;
+        bottom: 10px;
+        cursor: pointer;
+        i{
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: image-url("lecture_base.png") left top no-repeat;
+          &.blue{
+            background-image: image-url("lecture_survol.png") ;
+          }
         }
       }
-    }
-    #watch-demo{
-      margin-top: 10px;
-      margin-bottom: 60px;
+      a#watch-demo{
+        .center-block();
+        font-size: 150%;
+        margin-bottom: 60px;
+        .transition(color .5s);
+      }
     }
   }
   #about{
@@ -146,7 +160,7 @@ body{
     .title{
       display: block;
       color: @white;
-      font-size: 110%;
+      font-size: @titleFontSize;
       padding: 0 25px 40px 25px;
     }
     .description{
@@ -178,11 +192,9 @@ body{
             cursor: pointer;
             &:hover a.title{
               color: @white;
-              text-shadow: 3px 3px 6px darken(#202020,30%);
             }
             &.opened a.title{
               color: @blue;
-              text-shadow: 3px 3px 6px darken(#202020,30%);
             }
             .round{
               position: relative;
@@ -196,8 +208,7 @@ body{
               }
             }
             a.title{
-              .transition(text-shadow 1s);
-              .transition(color 1s);
+              .transition(color .5s);
             }
           }
           .title{
@@ -205,6 +216,7 @@ body{
             display:block;
             cursor: pointer;
             text-align: center;
+            font-size: @titleFontSize;
           }
           .picto{
             height: 40px;
@@ -212,6 +224,7 @@ body{
           }
           .description {
             text-align: center ;
+            font-size: 80%;
             height: 186px;
             overflow-y: auto;
             p{
@@ -225,6 +238,7 @@ body{
   }
   #contact{
     padding-top: 30px;
+    padding-bottom: 50px;
     h3{
       margin-right: 50px;
       text-align: right;
@@ -274,7 +288,7 @@ body{
         .round-icon{
           margin-right: 20px;
         }
-        span.phone, a{
+        span.phone,a, a span{
           .inline-block();
           .transition(color 1s);
           &:hover{
@@ -336,7 +350,7 @@ body{
     padding: 0 15px;
     position: relative;
     bottom: 10px;
-    font-size: 20px;
+    font-size: @titleFontSize;
   }
   text-align: center;
   padding-bottom: 10px;
@@ -344,4 +358,8 @@ body{
 strong{
   font-weight: normal !important;
   color: @blue !important;
+}
+
+.control-group.error .help-inline{
+  color: @blue;
 }
