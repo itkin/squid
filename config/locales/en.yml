@@ -5,11 +5,11 @@ en:
   home:
     video_id: "31714905"
     before_title: "bienvenue chez squid corp."
-    title: "j'adore quand <strong>un plan </strong><br/><strong>se déroule</strong> sans accroc"
+    title: "créatifs indépendants <br/>création numérique"
     watch_demo: "voir notre demoreel"
 
   infos:
-    separator: "lol"
+    separator: "qui nous sommes"
     title: Nous mélangeons idées, histoires et pixels.
     sub_title: Et bien d’autres choses encore, like never before.
     features:
@@ -29,7 +29,7 @@ en:
         title:        "Nous créons des images numériques"
         description:  "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... nous maîtrisons le support et la technique les mieux adaptés à vos besoins."
       center:
-        title:        "Nous sommes un collectif de graphistes indépendants."
+        title:        "Nous sommes une corporation de créatifs polyvalents."
         description:  "Nous associons la réactivité d'un freelance, la flexibilité d'un collectif et le sérieux d'un studio. Organisés autour d'un noyau, nous ajustons nos équipes aux besoins de chaque projet."
       right:
         title:        "Nous sommes une corporation pluridiscilinaire"
@@ -42,7 +42,7 @@ en:
         title:        "Nous sommes connectés"
         description:  "La fibre optique, l’informatique portable et les solutions logicielles de pointe sont les meilleurs outils de notre coopération mobile. Nous collaborons avec nos clients avec la même facilité qu’à domicile. Et vous êtes toujours les bienvenus."
       right:
-        title:        "Nous sommes expérimentés <br/> Et passionnés"
+        title:        "Nous sommes expérimentés.<br/> Et passionnés"
         description:  "Nous évoluons dans le monde du long-métrage, de la publicité, du jeu vidéo, de la télévision, de la communication et de l’évènementiel, depuis de nombreuses années. Nous aimons échanger, créer, raconter : mettre à votre service notre savoir-faire."
   second_block:
     first_row:
@@ -67,10 +67,10 @@ en:
         description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
 
   services:
-    separator: "lol"
+    separator: "ce que nous faisons"
 
   contact:
-    separator: "Commencons à travailler <strong> ensemble</strong>, contactez <strong> nous</strong>"
+    separator: "Commencons à travailler <strong> ensemble</strong>, contactez-<strong>nous</strong>"
     title: ""
     info: "Nous vous répondrons sous 24h."
 
@@ -78,13 +78,13 @@ en:
       email: "contact@squid-corp.com"
       phone:  "06 50 49 81 74"
       address:  "80, rue du dessous des berges <br/> 75013 PARIS"
-      address_link: "#"
+      address_link: "http://maps.google.fr/maps?f=q&source=s_q&hl=fr&geocode=&q=80,+rue+du+dessous+des+berges&aq=&sll=46.75984,1.738281&sspn=10.087752,17.709961&vpsrc=0&ie=UTF8&hq=&hnear=80+Rue+du+Dessous+des+Berges,+75013+Paris,+Île-de-France&t=m&z=16&iwloc=A"
       tweeter: "@squid_corp"
-      tweeter_link: "#"
+      tweeter_link: "http://www.twitter.com/squid_corp"
       facebook: "www.facebook.com/squidcorp"
-      facebook_link: "#"
-      vimeo: "www.facebook.com/squidcorp"
-      vimeo_link:    "#"
+      facebook_link: "http://www.facebook.com/squidcorp"
+      vimeo: "www.vimeo.com/squidcorp"
+      vimeo_link:    "http://www.vimeo.com/squidcorp"
 
 
     form:

@@ -45,9 +45,9 @@
     $("#play-button-wrapper").bind(click, function(e){
       e.preventDefault();
       var $modal = $("#demo.modal"),
-          width = 613,
-          height = 322,
-          marginLeft =  613 / 2 ;
+          width = 720,
+          height = 387,
+          marginLeft =  720 / 2 ;
 
       $modal.css({overflow: "hidden", width: (width + 4 )+ 'px', height: (height + 4)+ 'px', marginLeft: '-' + marginLeft + 'px' });
       $modal.find('.modal-body').html('<iframe src="http://player.vimeo.com/video/'+$modal.attr('data-target-id') + '?title=0&amp;portrait=0&amp;autoplay=1" width="'+width+'" height="'+ height +'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
