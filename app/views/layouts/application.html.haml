@@ -28,17 +28,12 @@
           %a#watch-demo{:href => "#"}
             != t("home.watch_demo")
 
-        #demo.modal{:style =>"display:none", "data-target-id" => t("home.video_id") }
-          -#.modal-header
-          -#  %a.close(data-dismiss="modal") ×
-          -#  %h3 Modal header
-
+        - width = 720;
+        - height = 387;
+        - marginLeft =  720 / 2;
+        #demo.modal{:style =>"overflow:hidden;display:none;width:#{width + 4}px;height:#{height + 4}px;margin-left:-#{marginLeft}px" }
           .modal-body
-            -#%iframe{:src=>"http://player.vimeo.com/video/#{t("home.video_id")}" , :frameborder=>"0"}
-
-          -#.modal-footer
-          -#  <a href="#" class="btn">Close</a>
-          -#  <a href="#" class="btn btn-primary">Save changes</a>
+            %iframe(webkitAllowFullScreen mozallowfullscreen allowFullScreen){:src=>"http://player.vimeo.com/video/#{t("home.video_id")}?title=0&amp;portrait=0&amp;autoplay=1", :width=>width, :height => height, :frameborder=>0 }
 
   #about.container
     .row
