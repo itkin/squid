@@ -7,7 +7,7 @@ set :rails_env, ENV['rails_env'] || ENV['RAILS_ENV'] || default_env
 joseph = "joseph.webflows.fr"
 
 set :application, ""
-set :repository,  "git://github.com/itkin/squid.git"
+set :repository,  "https://github.com/itkin/squid.git"
 
 set :scm, :git
 set :deploy_to, "~/www.squid-corp.com"
