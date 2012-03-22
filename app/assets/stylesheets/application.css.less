@@ -15,9 +15,16 @@
 @textShadow: 4px 4px 6px darken(#202020,30%);
 @titleFontSize: 20px;
 
-@font-face{
-  font-family: dinLight ;
-  src: font-url("DinLight.ttf"), font-url("DinLight.otf") ;
+@font-face {
+    font-family: 'dinLight';
+    src: font-url('dinlight-webfont.eot');
+    src: font-url('dinlight-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('dinlight-webfont.woff') format('woff'),
+         font-url('dinlight-webfont.ttf') format('truetype'),
+         font-url('dinlight-webfont.svgz#DIN30640StdNeuzeitGroteskLt') format('svg'),
+         font-url('dinlight-webfont.svg#DIN30640StdNeuzeitGroteskLt') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1,h2,h3{
