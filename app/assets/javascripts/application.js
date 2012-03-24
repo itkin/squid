@@ -18,11 +18,10 @@
 
 
     var ua = navigator.userAgent,
-        click = (ua.match(/iPad/i)) ? "touchstart" : "click";
+        click = (ua.match(/iPad/i)) ? "touch" : "click";
 
     $("#menu a").bind(click, function(e){
       e.preventDefault();
-      e.stopPropagation();
       $('html,body').animate({scrollTop:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
     });
 
