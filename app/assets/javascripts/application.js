@@ -22,10 +22,8 @@
 
     $("#menu a").bind(click, function(e){
       e.preventDefault();
-      if (ua.match(/iPad/i))
-        $(window).animate({pageYOffset:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
-      else
-        $('html,body').animate({scrollTop:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
+      var anchor = $(this).attr("href");
+      $('html,body').animate({ scrollTop:  $(anchor).offset().top - 129 }, 1500, "easeInOutCubic")
     });
 
     $("a.brand").on(click, function(e){
