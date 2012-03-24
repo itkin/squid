@@ -27,6 +27,11 @@
     font-style: normal;
 }
 
+// Border Radius
+.border-radius(@radius: 5px) {
+  behavior: url(/assets/pie/PIE.htc);
+}
+
 h1,h2,h3{
   font-weight: 300;
   letter-spacing: 0.1ex;
@@ -56,10 +61,21 @@ body{
     .brand{
       padding: 0;
       margin-left: -200px;
+      background: image-url("logo.png") left top no-repeat;
+      -pie-background: image-url("logo.png") left top no-repeat;
+      /*behavior: url(/assets/pie/PIE.htc);*/
+      width: 611px;
+      height: 99px;
+      img{
+        display:none;
+      }
     }
     background: image-url('header.png') left bottom repeat-x;
     .box-shadow(none);
     .box-shadow(0 5px 20px 1px #131313);
+    -pie-background: image-url('header.png') left bottom repeat-x;
+    filter: none;
+    /*behavior: url(/assets/pie/PIE.htc);*/
     height: 99px;
     .container{
       margin-top: 0;
@@ -270,7 +286,7 @@ body{
       .submit{
         float: right;
         border: none;
-        img { margin-left: 5px; margin-top: 6px; }
+        background: transparent;
       }
       textarea{
         height: 122px;
@@ -281,6 +297,7 @@ body{
         box-shadow: 1px 1px 2px 0 darken(#202020,30%) inset, 1px 1px 3px 0 #3a3a3a;
         color: @grayLight;
         width: 280px;
+        behavior: url(/assets/pie/PIE.htc);
       }
       .success{
         color: @blue;
