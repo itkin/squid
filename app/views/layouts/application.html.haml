@@ -3,115 +3,114 @@
   = stylesheet_link_tag "bootstrap", "application"
   = javascript_include_tag "application"
   = csrf_meta_tags
-%body
-  #page-wrapper(data-spy="scroll" data-offset="200")
-    #header.navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          = link_to " ", "#", :class => "brand"
-          %ul#menu.nav.nav-pills.pull-right
-            %li= link_to "accueil", "#home"
-            %li= link_to "infos", "#about"
-            %li= link_to "services", "#service"
-            %li= link_to "contact" , "#contact"
-    #home.container-fluid
-      .row-fluid
-        .span12
-          #titles
-            %h3!= t("home.before_title")
-            %h1!= t("home.title")
-          #blue-vertical-line
-          #play-button-wrapper
-            #play-button
-              %i
-              %i.blue{:style => "display:none"}
-            %a#watch-demo{:href => "#"}
-              != t("home.watch_demo")
+%body(data-spy="scroll" data-offset="200")
+  #header.navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        = link_to " ", "#", :class => "brand"
+        %ul#menu.nav.nav-pills.pull-right
+          %li= link_to "accueil", "#home"
+          %li= link_to "infos", "#about"
+          %li= link_to "services", "#service"
+          %li= link_to "contact" , "#contact"
+  #home.container-fluid
+    .row-fluid
+      .span12
+        #titles
+          %h3!= t("home.before_title")
+          %h1!= t("home.title")
+        #blue-vertical-line
+        #play-button-wrapper
+          #play-button
+            %i
+            %i.blue{:style => "display:none"}
+          %a#watch-demo{:href => "#"}
+            != t("home.watch_demo")
 
-          - width = 720;
-          - height = 387;
-          - marginLeft =  720 / 2;
-          #demo.modal{:style =>"overflow:hidden;display:none;width:#{width + 4}px;height:#{height + 4}px;margin-left:-#{marginLeft}px" }
-            .modal-body
-              %iframe(webkitAllowFullScreen mozallowfullscreen allowFullScreen){:src=>"http://player.vimeo.com/video/#{t("home.video_id")}?title=0&amp;portrait=0&amp;autoplay=1", :width=>width, :height => height, :frameborder=>0 }
+        - width = 720;
+        - height = 387;
+        - marginLeft =  720 / 2;
+        #demo.modal{:style =>"overflow:hidden;display:none;width:#{width + 4}px;height:#{height + 4}px;margin-left:-#{marginLeft}px" }
+          .modal-body
+            %iframe(webkitAllowFullScreen mozallowfullscreen allowFullScreen){:src=>"http://player.vimeo.com/video/#{t("home.video_id")}?title=0&amp;portrait=0&amp;autoplay=1", :width=>width, :height => height, :frameborder=>0 }
 
-    #about.container
-      .row
-        .span12
-          = separator("infos.separator")
-      .row
-        .span12
-          %h2!= t('infos.title')
-          %h3!= t('infos.sub_title')
-      .row
-        .span4
-          %i.picto-info-pencils
-          .title!= t("infos.features.first.title")
-          .description
-            %p!= t("infos.features.first.description")
-        .span4
-          %i.picto-info-square
-          .title!= t("infos.features.second.title")
-          .description
-            %p!= t("infos.features.second.description")
-        .span4
-          %i.picto-info-coeur
-          .title!= t("infos.features.third.title")
-          .description
-            %p!= t("infos.features.third.description")
+  #about.container
+    .row
+      .span12
+        = separator("infos.separator")
+    .row
+      .span12
+        %h2!= t('infos.title')
+        %h3!= t('infos.sub_title')
+    .row
+      .span4
+        %i.picto-info-pencils
+        .title!= t("infos.features.first.title")
+        .description
+          %p!= t("infos.features.first.description")
+      .span4
+        %i.picto-info-square
+        .title!= t("infos.features.second.title")
+        .description
+          %p!= t("infos.features.second.description")
+      .span4
+        %i.picto-info-coeur
+        .title!= t("infos.features.third.title")
+        .description
+          %p!= t("infos.features.third.description")
 
-    #service.container
-      .row
-        .span12
-          = separator("services.separator")
-      .row
-        = feature("left", "picto-service-chair", "second_block.first_row.left")
-        = feature("center", "picto-service-cube", "second_block.first_row.center")
-        = feature("right", "picto-service-draw", "second_block.first_row.right")
-      .row
-        = feature("left", "picto-service-camera", "second_block.second_row.left")
-        = feature("center", "picto-service-movie", "second_block.second_row.center")
-        = feature("right", "picto-service-light", "second_block.second_row.right")
-    #contact.container
-      .row
-        .span12
-          = separator("contact.separator")
-      .row
-        .span6
-          %h3!= t("contact.title")
+  #service.container
+    .row
+      .span12
+        = separator("services.separator")
+    .row
+      = feature("left", "picto-service-chair", "second_block.first_row.left")
+      = feature("center", "picto-service-cube", "second_block.first_row.center")
+      = feature("right", "picto-service-draw", "second_block.first_row.right")
+    .row
+      = feature("left", "picto-service-camera", "second_block.second_row.left")
+      = feature("center", "picto-service-movie", "second_block.second_row.center")
+      = feature("right", "picto-service-light", "second_block.second_row.right")
+  #contact.container
+    .row
+      .span12
+        = separator("contact.separator")
+    .row
+      .span6
+        %h3!= t("contact.title")
 
-          .info-block!= t("contact.info")
-        .span6
-      .row
-        .span6
-          = render :partial => "messages/form", :locals => { :message => @message }
-        .span6
-          %ul.unstyled
-            %li
-              %a{:href => "mailto:#{t("contact.menu.email")}"}
-                = contact_item("email")
-                = t("contact.menu.email")
-            %li
-              %span.phone
-                != contact_item("phone")
-                != t("contact.menu.phone")
+        .info-block!= t("contact.info")
+      .span6
+    .row
+      .span6
+        = render :partial => "messages/form", :locals => { :message => @message }
+      .span6
+        %ul.unstyled
+          %li
+            %a{:href => "mailto:#{t("contact.menu.email")}"}
+              = contact_item("email")
+              = t("contact.menu.email")
+          %li
+            %span.phone
+              != contact_item("phone")
+              != t("contact.menu.phone")
 
-            %li
-              = link_to(t("contact.menu.address_link"), :target => "_blank") do
-                != contact_item("address")
-                %span!= t("contact.menu.address")
-            %li
-              = link_to t("contact.menu.tweeter_link"), :target => "_blank" do
-                != contact_item('tweeter')
-                != t("contact.menu.tweeter")
+          %li
+            = link_to(t("contact.menu.address_link"), :target => "_blank") do
+              != contact_item("address")
+              %span!= t("contact.menu.address")
+          %li
+            = link_to t("contact.menu.tweeter_link"), :target => "_blank" do
+              != contact_item('tweeter')
+              != t("contact.menu.tweeter")
 
-            %li
-              = link_to t("contact.menu.facebook_link"), :target => "_blank" do
-                != contact_item('facebook')
-                != t("contact.menu.facebook")
+          %li
+            = link_to t("contact.menu.facebook_link"), :target => "_blank" do
+              != contact_item('facebook')
+              != t("contact.menu.facebook")
 
-            %li
-              = link_to t("contact.menu.vimeo_link"), :target => "_blank" do
-                != contact_item("vimeo")
-                != t("contact.menu.vimeo")
+          %li
+            = link_to t("contact.menu.vimeo_link"), :target => "_blank" do
+              != contact_item("vimeo")
+              != t("contact.menu.vimeo")
 
