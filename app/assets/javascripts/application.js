@@ -22,7 +22,7 @@
 
     $("#menu a").bind(click, function(e){
       e.preventDefault();
-      $('html,body').animate({scrollTop:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
+      $('html').animate({scrollTop:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
     });
 
     $("a.brand").on(click, function(e){
