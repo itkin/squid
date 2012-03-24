@@ -61,24 +61,24 @@
       }
     })
 
-    $('body').on(click,"div.feature-slider", function(e){
-      var $this = $(this);
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      if ($this.hasClass('opened')){
-        $this.animate({marginTop: "0"})
-        $this.removeClass("opened")
-      } else {
-        $this.animate({marginTop: "-241px"});
-        $this.addClass("opened")
-        $("body").one(click, function(e){
-          $this.animate({marginTop: "0"})
-          $this.removeClass("opened")
-        })
-      }
-
-
-//      $(this).closest('.feature-slider').animate({marginTop: "-196px"})
-    })
+//    $('body').on(click,"div.feature-slider", function(e){
+//      var $this = $(this);
+//      e.preventDefault();
+//      e.stopImmediatePropagation();
+//      if ($this.hasClass('opened')){
+//        $this.animate({marginTop: "0"})
+//        $this.removeClass("opened")
+//      } else {
+//        $this.animate({marginTop: "-241px"});
+//        $this.addClass("opened")
+//        $("body").one(click, function(e){
+//          $this.animate({marginTop: "0"})
+//          $this.removeClass("opened")
+//        })
+//      }
+//
+//
+////      $(this).closest('.feature-slider').animate({marginTop: "-196px"})
+//    })
   });
 })(jQuery);
