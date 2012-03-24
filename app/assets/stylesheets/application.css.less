@@ -39,6 +39,16 @@ h1,h2,h3{
 .container{
   margin-top: 100px;
 }
+html, body{
+  position: relative;
+  height: 100%;
+}
+#page-wrapper{
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 body{
   padding:0;
   position:relative;
@@ -109,9 +119,6 @@ body{
     background: image-url('jewels.png') left top repeat-x;
     .background-size(cover);
     -pie-background: image-url('jewels.png') no-repeat, background-size(cover);
-    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/jewels.png',sizingMethod='cover');*/
-    /*-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/jewels.png',sizingMethod='cover')";*/
-
     text-align: center;
     #titles{
       text-align: center;
