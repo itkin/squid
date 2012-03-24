@@ -20,10 +20,10 @@
     var ua = navigator.userAgent,
         click = (ua.match(/iPad/i)) ? "touchstart" : "click";
 
-    $("#menu a").bind("touchstart", function(e){
+    $("#menu a").bind(click, function(e){
       e.preventDefault();
-      alert('io')
-      //$('html,body').animate({scrollTop:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
+      console.log($($(this).attr("href")).offset()['top'] - 129);
+      $('html').animate({scrollTop:  $($(this).attr("href")).offset()['top'] - 129}, 1500, "easeInOutCubic")
     });
 
     $("a.brand").on(click, function(e){
