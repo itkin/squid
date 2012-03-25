@@ -1,6 +1,7 @@
 //= require jquery
 //= require jquery.effects.core
-//= require twitter/bootstrap
+//= require twitter/bootstrap/bootstrap-modal
+//= require twitter/bootstrap/bootstrap-scrollspy
 
 (function($){
   $(document).ready(function(){
@@ -77,6 +78,9 @@
           $this.removeClass("opened")
         })
       }
+    })
+    $(".modal").bind('shown', function(){
+      $(this).css({top: (( window.innerHeight - $(this).height() ) / 2) + 'px', marginTop: 0 });
     })
   });
 })(jQuery);

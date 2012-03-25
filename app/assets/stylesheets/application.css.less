@@ -1,5 +1,3 @@
-
-
 @import "bootstrap_overrides.css.less";
 @import "twitter/bootstrap/mixins";
 @import "picto.css.less";
@@ -221,9 +219,6 @@ body{
             &:hover a.title{
               color: @white;
             }
-            &.opened a.title{
-              color: @blue;
-            }
             .round{
               position: relative;
               color: @grayLight;
@@ -233,6 +228,11 @@ body{
                 top: 12.5px;
                 width: 100%;
                 height: 100%;
+              }
+            }
+            &.opened{
+              a.title{
+                color: @blue;
               }
             }
             a.title{
