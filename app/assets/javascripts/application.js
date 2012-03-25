@@ -65,7 +65,7 @@
       $("#demo.modal").modal();
     })
 
-    $('.feature, #contact ul li, button.submit ').hover(function(e){
+    $('#about .span4, .feature, #contact ul li, button.submit ').hover(function(e){
       if ( $.browser.msie && $.browser.version < 9 ) {
         $(this).find('i.picto-blue').toggle();
       } else {

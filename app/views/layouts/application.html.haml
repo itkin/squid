@@ -42,19 +42,25 @@
       .span12
         %h2!= t('infos.title')
         %h3!= t('infos.sub_title')
-    .row
+    .row.pictos
       .span4
-        %i.picto-info-pencils
+        .pict-wrapper
+          %i.picto-info-pencils
+          %i.picto-info-pencils.picto-blue{:style => "display:none"}
         .title!= t("infos.features.first.title")
         .description
           %p!= t("infos.features.first.description")
       .span4
-        %i.picto-info-square
+        .pict-wrapper
+          %i.picto-info-square
+          %i.picto-info-square.picto-blue{:style => "display:none"}
         .title!= t("infos.features.second.title")
         .description
           %p!= t("infos.features.second.description")
       .span4
-        %i.picto-info-coeur
+        .pict-wrapper
+          %i.picto-info-coeur
+          %i.picto-info-coeur.picto-blue{:style => "display:none"}
         .title!= t("infos.features.third.title")
         .description
           %p!= t("infos.features.third.description")
