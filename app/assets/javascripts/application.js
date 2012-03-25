@@ -21,7 +21,8 @@
     var ua = navigator.userAgent,
         click = (ua.match(/iPad/i)) ? "touchstart" : "click";
 
-    $("#menu a").bind(click, function(e){
+    $("#menu a").bind("click", function(e){
+      console.log('clicked');
       e.preventDefault();
       var anchor = $(this).attr("href");
       $('html,body').animate({ scrollTop:  ($(anchor).offset().top - 129) + "px" }, 1500, "easeInOutCubic")
