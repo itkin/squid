@@ -21,7 +21,7 @@
     var ua = navigator.userAgent,
         click = (ua.match(/iPad/i)) ? "touchstart" : "click";
 
-    $("#menu a").on(click, function(e){
+    $('body').on(click, "#menu a", function(e){
       console.log('clicked');
       e.preventDefault();
       var anchor = $(this).attr("href");
