@@ -71,7 +71,15 @@
       } else {
         $(this).find('i.picto-blue').fadeToggle(500);
       }
-    })
+    });
+
+    if (ua.match(/iPad/i)){
+      $('#contact li a').on('click touchend', function(e) {
+          var el = $(this);
+          var link = el.attr('href');
+          window.location = link;
+      });
+    }
 
     $('body').on(click,"div.feature-slider", function(e){
       var $this = $(this);
