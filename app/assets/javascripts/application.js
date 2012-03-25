@@ -19,19 +19,19 @@
 
 
     var ua = navigator.userAgent,
-        click = (ua.match(/iPad/i)) ? "touchstart" : "click";
+        click = (ua.match(/iPad/i)) ? "mouseover" : "click";
 
-    $("body").on("tap", function(){
-      console.log('taped')
-      console.log(this)
-    })
-    $("body").on("touch", function(){
-      console.log('touched')
-      console.log(this)
-    })
+//    $("body").on("tap", function(){
+//      console.log('taped')
+//      console.log(this)
+//    })
+//    $("body").on("touch", function(){
+//      console.log('touched')
+//      console.log(this)
+//    })
 
 
-    $("#menu a").bind("click tap", function(e){
+    $("#menu a").bind(click, function(e){
       e.preventDefault();
       var anchor = $(this).attr("href");
       $('html,body').animate({ scrollTop:  ($(anchor).offset().top - 129) + "px" }, 1500, "easeInOutCubic")
