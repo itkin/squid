@@ -24,12 +24,12 @@
     $("#menu a").bind(click, function(e){
       e.preventDefault();
       var anchor = $(this).attr("href");
-      $('html,body').animate({ translateY:  $(anchor).offset().top - 129 }, 1500, "easeInOutCubic")
+      $('html,body').animate({ scrollTop:  ($(anchor).offset().top - 129) + "px" }, 1500, "easeInOutCubic")
     });
 
     $("a.brand").on(click, function(e){
       e.preventDefault();
-      $('html,body').animate({translateY:  0}, 1500, "easeInOutCubic")
+      $('html,body').animate({scrollTop:  0}, 1500, "easeInOutCubic")
     });
 
     $('body').on('submit','form', function(e){
