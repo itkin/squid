@@ -17,13 +17,13 @@ en:
     sub_title: "Et bien d'autres choses encore, like never before."
     features:
       first:
-        title: Nous sommes une corporation de créatifs polyvalents.
+        title: Nous sommes une <strong>corporation</strong> de <strong>créatifs polyvalents</strong>.
         description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
       second:
-        title: Nous créons des images et effets numériques.
+        title: Nous créons des <strong>images</strong> et <strong>effets numériques</strong>.
         description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
       third:
-        title: Nous sommes experimentés.</br>Et passionnés.
+        title: Nous sommes <strong>experimentés</strong>.</br>Et <strong>passionnés</strong>.
         description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
 
   first_block:
