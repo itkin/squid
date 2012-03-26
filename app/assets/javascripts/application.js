@@ -54,9 +54,9 @@
 
     $('#play-button-wrapper').hover(function(e){
       if ( $.browser.msie && $.browser.version < 9 ) {
-        $(this).find('i.picto-blue').toggle();
+        $(this).find('i.blue').toggle();
       } else {
-        $(this).find('i.picto-blue').fadeToggle(500);
+        $(this).find('i.blue').fadeToggle(500);
       }
     });
 
