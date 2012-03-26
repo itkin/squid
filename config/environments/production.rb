@@ -49,6 +49,7 @@ Squid2::Application.configure do
   config.assets.precompile += ["pie/PIE.htc", "application.js", "bootstrap.css", 'bootstrap_overrides.css', 'application.css']
   config.assets.compress= true
   config.assets.js_compressor = :uglifier
+  config.less.compress = true
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
