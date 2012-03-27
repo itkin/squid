@@ -8,23 +8,23 @@ en:
   home:
     video_id: "39164985"
     before_title: "bienvenue chez squid corp."
-    title: "créatifs indépendants <br/>création numérique"
+    title: "créatifs indépendants <br/><strong>création numérique</strong>"
     watch_demo: "voir notre demoreel"
 
   infos:
-    separator: "qui nous sommes"
-    title: "Nous mélangeons <strong>idées</strong>, <strong>histoires</strong> et <strong>pixels</strong>."
-    sub_title: "Et bien d'autres choses encore, like never before."
+    separator: "créatifs indépendants"
+    title: "Nous fabriquons <strong>idées</strong>, <strong>histoires</strong> et <strong>pixels</strong>."
+    sub_title: "Et nous les assemblons dans des images, taillées sur mesure."
     features:
       first:
         title: Nous sommes une <strong>corporation</strong> de <strong>créatifs polyvalents</strong>.
-        description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
+        description: "Nous associons la réactivité d’un freelance, la flexibilité d’un collectif et le sérieux d’un studio, en adaptant nos équipes aux besoins de chaque projet. Notre annuaire de créatifs nous permet d’assurer l’entière production de vos images ; de l’écriture à la livraison finale, en respectant budgets et délais."
       second:
         title: Nous créons des <strong>images</strong> et <strong>effets numériques</strong>.
-        description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
+        description: "Publicité, cinéma, film d’animation, vidéo institutionnelle, print, web ... Images fixes, animées, quelque soit le support, quelque soit le produit, l’idée, le concept, nous maîtrisons les outils et les techniques nécessaires à la réalisation de votre projet."
       third:
         title: Nous sommes <strong>experimentés</strong>.</br>Et <strong>passionnés</strong>.
-        description: "Fixes, animées, en 2D ou 3D, vidéo, photo, effets spéciaux... "
+        description: "Aguerris au monde de la publicité, du long-métrage, du jeu-vidéo, de l'événementiel, de l'architecture, nous évoluons dans l'univers du graphisme depuis de nombreuses années. Nous nous connaissons et nous nous choisissons. Nous aimons les propos pertinents et les belles images. Nous aimons nos métiers, et vous en faire profiter."
 
   first_block:
     first_row:
