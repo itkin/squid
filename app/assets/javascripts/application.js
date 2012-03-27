@@ -46,7 +46,10 @@
       e.preventDefault();
       var $this = $(this);
       $.post($this.attr('action'), $this.serialize()).success(function(html){
-        $(html).replaceAll($this).find('button.submit').after("<span class='success'>Thank you!</span>");
+        $(html).replaceAll($this).find('button.submit').after("<span class='success'>Merci !</span>");
+        setTimeout(function(){
+          $('.success').fadeOut();
+        }, 5000)
       }).error(function(xhr){
         $this.replaceWith(xhr.responseText);
       })
