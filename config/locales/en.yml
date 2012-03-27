@@ -8,11 +8,11 @@ en:
   home:
     video_id: "39164985"
     before_title: "bienvenue chez squid corp."
-    title: "créatifs indépendants <br/><strong>création numérique</strong>"
+    title: "graphistes indépendants <br/><strong>création numérique</strong>"
     watch_demo: "voir notre demoreel"
 
   infos:
-    separator: "créatifs indépendants"
+    separator: "graphistes indépendants"
     title: "Nous fabriquons <strong>idées</strong>, <strong>histoires</strong> et <strong>pixels</strong>."
     sub_title: "Et nous les assemblons dans des images, taillées sur mesure."
     features:
@@ -51,26 +51,26 @@ en:
     first_row:
       left:
         title:        "réalisation"
-        description:  "écriture <br/> <br/>storyboard<br/> <br/>animatique<br/> <br/>mise en scène<br/> pub <br/> pub <br/> pub <br/>"
+        description:  "écriture <br/> <br/>storyboard<br/> <br/>animatique<br/> <br/>mise en scène"
       center:
         title:        "3d"
-        description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
+        description:  "film d'animation<br/>architecture<br/>packshot<br/>design<br/>retail design<br/>"
       right:
         title:        "2d"
-        description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
+        description:  "motion design<br/>titrage<br/>retouche photo<br/>print<br/>matte-painting<br/>"
     second_row:
       left:
         title:        "tournage"
-        description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
+        description:  "vidéo<br/> <br/> photo <br/> <br/>stop motion<br/> <br/>time-lapse"
       center:
         title:        "effets visuels"
-        description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
+        description:  "supervision<br/>tracking 2D/3D<br/>restore/effaçage<br/>incrustation<br/>compositing<br/>FX<br/>"
       right:
-        title:        "R&D"
-        description:  "pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/> pub <br/>"
+        title:        "ce que vous imaginez"
+        description:  "Venez avec votre idée ! Nous ne sommes pas seulement graphistes. Squid corp. réunit développeurs, plasticiens, compositeurs ...<br/>Pour une demande originale, contactez - nous."
 
   services:
-    separator: "ce que nous faisons"
+    separator: "création numérique"
 
   contact:
     separator: "Commencons à travailler <strong> ensemble</strong>, contactez-<strong>nous</strong>"
