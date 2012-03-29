@@ -9,22 +9,22 @@ en:
     video_id: "39285950"
     before_title: "bienvenue chez squid corp."
     title: "graphistes indépendants <br/><strong>création numérique</strong>"
-    watch_demo: "voir notre demoreel"
+    watch_demo: "voir notre bande démo"
 
   infos:
     separator: "graphistes indépendants"
     title: "Nous fabriquons <strong>idées</strong>, <strong>histoires</strong> et <strong>pixels</strong>."
-    sub_title: "Et nous les assemblons dans des images, taillées sur mesure."
+    sub_title: "Et nous les assemblons en images, taillées sur mesure."
     features:
       first:
         title: Nous sommes une <strong>corporation</strong> de <strong>créatifs polyvalents</strong>.
         description: "Nous associons la réactivité d’un freelance, la flexibilité d’un collectif et le sérieux d’un studio, en adaptant nos équipes aux besoins de chaque projet. Notre annuaire de créatifs nous permet d’assurer l’entière production de vos images ; de l’écriture à la livraison finale, en respectant budgets et délais."
       second:
         title: Nous créons des <strong>images</strong> et des <strong>effets numériques</strong>.
-        description: "Publicité, cinéma, film d’animation, vidéo institutionnelle, print, web ... Images fixes, animées, quelque soit le support, quelque soit le produit, l’idée, le concept, nous maîtrisons les outils et les techniques nécessaires à la réalisation de votre projet."
+        description: "Publicité, cinéma, film d’animation, vidéo institutionnelle, print, web... Images fixes, animées, quel que soit le support, quel que soit le produit, l’idée, le concept, nous maîtrisons les outils et les techniques nécessaires à la réalisation de votre projet."
       third:
-        title: Nous sommes <strong>experimentés</strong>.<br/>Et <strong>passionnés</strong>.
-        description: "Aguerris aux monde de la publicité, du long-métrage, du jeu-vidéo, de l'événementiel, de l'architecture, nous formons une entité dont les éléments se connaissent et se sont choisis.<br/><br/>Nous aimons nos métiers, et vous en faire profiter."
+        title: Nous sommes <strong>expérimentés</strong>.<br/>Et <strong>passionnés</strong>.
+        description: "Aguerris aux mondes de la publicité, du long-métrage, du jeu-vidéo, de l'événementiel, de l'architecture, nous formons une entité dont les éléments se connaissent et se sont choisis.<br/> <br/>Nous aimons nos métiers, et vous en faire profiter."
 
   first_block:
     first_row:
@@ -51,29 +51,29 @@ en:
     first_row:
       left:
         title:        "réalisation"
-        description:  "écriture <br/> <br/>storyboard<br/> <br/>animatique<br/> <br/>mise en scène"
+        description:  "<br/>écriture<br/>storyboard<br/>animatique<br/>mise en scène"
       center:
         title:        "3d"
-        description:  "film d'animation<br/>architecture<br/>packshot<br/>design<br/>retail design<br/>"
+        description:  "<br/>film d'animation<br/>architecture<br/>packshot<br/>design<br/>retail design<br/>"
       right:
         title:        "2d"
-        description:  "motion design<br/>titrage<br/>retouche photo<br/>print<br/>matte-painting<br/>"
+        description:  "<br/>motion design<br/>titrage<br/>retouche photo<br/>print<br/>matte-painting<br/>"
     second_row:
       left:
         title:        "tournage"
-        description:  "vidéo<br/> <br/> photo <br/> <br/>stop motion<br/> <br/>time-lapse"
+        description:  "<br/>vidéo<br/>photo<br/>stop motion<br/>time-lapse"
       center:
         title:        "effets visuels"
-        description:  "supervision<br/>tracking 2D/3D<br/>restore/effaçage<br/>incrustation<br/>compositing<br/>FX<br/>"
+        description:  "<br/>supervision<br/>tracking 2D/3D<br/>restore/effaçage<br/>incrustation<br/>compositing<br/>FX<br/>"
       right:
         title:        "ce que vous imaginez"
-        description:  "Venez avec votre idée ! Nous ne sommes pas seulement graphistes. Squid corp. réunit développeurs, plasticiens, compositeurs ...<br/>Pour une demande originale, contactez - nous."
+        description:  "<br/>Venez avec votre idée ! Nous ne sommes pas seulement graphistes. Squid corp. réunit développeurs, plasticiens, compositeurs ...<br/> <br/>Pour une demande originale, contactez-nous."
 
   services:
     separator: "création numérique"
 
   contact:
-    separator: "Commencons à travailler <strong> ensemble</strong>, contactez-<strong>nous</strong>"
+    separator: "Commençons à travailler <strong> ensemble</strong>, contactez-<strong>nous</strong>"
     title: ""
     info: "Nous vous répondrons sous 24h."
 
