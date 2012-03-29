@@ -67,7 +67,7 @@ en:
         description:  "<br/>supervision<br/>tracking 2D/3D<br/>restore/effaçage<br/>incrustation<br/>compositing<br/>FX<br/>"
       right:
         title:        "ce que vous imaginez"
-        description:  "<br/>Venez avec votre idée ! Nous ne sommes pas seulement graphistes. Squid corp. réunit développeurs, plasticiens, compositeurs ...<br/> <br/>Pour une demande originale, <a href="#contact">contactez-nous</a>."
+        description:  "<br/>Venez avec votre idée ! Nous ne sommes pas seulement graphistes. Squid corp. réunit développeurs, plasticiens, compositeurs ...<br/> <br/>Pour une demande originale, contactez-nous."
 
   services:
     separator: "création numérique"
