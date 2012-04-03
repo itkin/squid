@@ -3,7 +3,8 @@
 
 en:
   title: squid corp.
-  description: creation numérique, animations 2D, 3D, VFX, effets visuels, réalisation, tournage, clip, pub, cinéma, ciné, cine, film, video
+  description:
+  key_words: creation numérique, animations 2D, 3D, VFX, effets visuels, réalisation, tournage, clip, pub, cinéma, ciné, cine, film, video
 
   home:
     video_id: "39285950"
