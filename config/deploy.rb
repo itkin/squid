@@ -4,7 +4,7 @@ load 'deploy/assets'
 set :default_env, 'production'
 set :rails_env, ENV['rails_env'] || ENV['RAILS_ENV'] || default_env
 
-joseph = "joseph.webflows.fr"
+django = "django.webflows.fr"
 
 set :application, ""
 set :repository,  "https://github.com/itkin/squid.git"
@@ -15,13 +15,13 @@ set :deploy_to, "~/www.squid-corp.com"
 set :use_sudo, false
 
 set :user, "rails"
-set :scm_passphrase, Capistrano::CLI.password_prompt("Rails user password on joseph : ")
+set :scm_passphrase, Capistrano::CLI.password_prompt("Rails user password on django : ")
 
 set :branch, "master"
 
-role :web, joseph
-role :app, joseph
-role :db,  joseph, :primary => true
+role :web, django
+role :app, django
+role :db,  django, :primary => true
 
 default_run_options[:pty] = true  # Must be set for the password prompt from git to work
 set :deploy_via, :remote_cache
