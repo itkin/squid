@@ -8,7 +8,7 @@ set :rails_env, ENV['rails_env'] || ENV['RAILS_ENV'] || default_env
 joscho = "188.165.255.184"
 
 set :application, ""
-set :repository,  "https://github.com/davout/squid.git"
+set :repository,  "https://github.com/itkin/squid.git"
 
 set :scm, :git
 set :deploy_to, "~/squid-corp.com"
@@ -16,7 +16,7 @@ set :deploy_to, "~/squid-corp.com"
 set :use_sudo, false
 
 set :user, "rails"
-set :scm_passphrase, Capistrano::CLI.password_prompt("Rails user password on django : ")
+set :scm_passphrase, Capistrano::CLI.password_prompt("Rails user password on joscho : ")
 
 set :branch, "master"
 
