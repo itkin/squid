@@ -29,6 +29,9 @@
           %li= link_to "services", "#service"
           %li= link_to "contact" , "#contact"
   #home.container-fluid
+    #diapos
+      - t("home.diapos").each do |file|
+        .slide{:style => "background-image:url(#{image_path("diapos/#{file}")})"}
     .row-fluid
       .span12
         #titles

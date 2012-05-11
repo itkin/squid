@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery.effects.core
+//= require cycle
 //= require twitter/bootstrap/bootstrap-modal
 //= require twitter/bootstrap/bootstrap-scrollspy
 
@@ -18,6 +19,7 @@
 //      console.log(this)
 //    })
 
+    $('#diapos').cycle('fade')
 
     $("#menu a").bind(click, function(e){
       e.preventDefault();

@@ -104,10 +104,26 @@ body{
   }
 
   #home{
+    position: relative;
+    padding: 0;
+    #diapos{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      .slide{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+//        background: image-url('jewels.png') left top repeat-x;
+        background-position: left top ;
+        background-repeat: repeat-x;
+        .background-size(cover);
+//        -pie-background: image-url('jewels.png') no-repeat, background-size(cover);
+
+      }
+    }
     margin-top: 97px;
-    background: image-url('jewels.png') left top repeat-x;
-    .background-size(cover);
-    -pie-background: image-url('jewels.png') no-repeat, background-size(cover);
     text-align: center;
     #titles{
       text-align: center;
