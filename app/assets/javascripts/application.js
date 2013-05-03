@@ -53,10 +53,10 @@
       }
     });
 
-    $("#play-button-wrapper").bind(click, function(e){
-      e.preventDefault();
-      $("#demo.modal").modal();
-    })
+//    $("#play-button-wrapper").bind(click, function(e){
+//      e.preventDefault();
+//      $("#demo.modal").modal();
+//    })
 
     $('#about .span4, .feature, #contact ul li, button.submit ').hover(function(e){
       if ( $.browser.msie && $.browser.version < 9 ) {
