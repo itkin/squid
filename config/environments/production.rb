@@ -15,7 +15,7 @@ Squid2::Application.configure do
   # config.assets.compress = true
   config.less.compress = true
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  # config.assets.compile = false
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -50,7 +50,7 @@ Squid2::Application.configure do
   # config.assets.compress= true
   # config.assets.js_compressor = :uglifier
   config.less.compress = true
-
+  config.eager_load = true
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 

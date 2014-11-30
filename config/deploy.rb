@@ -50,9 +50,9 @@ end
 #  end
 #end
 
-task :remove_config_ru do
-  run "rm -f #{release_path}/config.ru"
-end
+# task :remove_config_ru do
+#   run "rm -f #{release_path}/config.ru"
+# end
 #
 #task :compile_static_pages do
 #  run "cd #{current_path} && bundle exec rake deployment:render_static_pages RAILS_ENV=production"

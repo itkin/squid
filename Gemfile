@@ -17,4 +17,4 @@ gem 'capistrano'
 gem 'capistrano-rails'
 gem 'rvm-capistrano'
 
-gem 'sprockets'
+gem 'sprockets-rails', :require => 'sprockets/railtie'

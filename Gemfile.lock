@@ -122,7 +122,7 @@ DEPENDENCIES
   nokogiri
   rails (>= 3.2.21)
   rvm-capistrano
-  sprockets
+  sprockets-rails
   sqlite3
   therubyracer
   twitter-bootstrap-rails

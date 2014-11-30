@@ -34,7 +34,7 @@ Squid2::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-
+  config.eager_load = false
   # Uncomment this to test e-mails in development mode
   config.action_mailer.delivery_method = :test #:sendmail
   config.action_mailer.default_url_options = {
