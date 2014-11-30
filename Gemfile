@@ -15,7 +15,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'capistrano'
+gem 'capistrano', "2.12.0"
 gem 'capistrano-rails'
 gem 'rvm-capistrano'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
