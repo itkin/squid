@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '>= 3.2.21'
+gem 'rails', '>= 3.2.0'
 
 gem 'sqlite3'
 gem 'json'
@@ -16,5 +16,4 @@ end
 gem 'capistrano'
 gem 'capistrano-rails'
 gem 'rvm-capistrano'
-
-gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'sprockets-rails'
