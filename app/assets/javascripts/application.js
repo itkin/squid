@@ -6,9 +6,8 @@
 
 
 $(document).ready(function(){
-
   var ua = navigator.userAgent,
-      click = (ua.match(/iPad/i)) ? "touchend" : "click";
+    click = (ua.match(/iPad/i)) ? "touchend" : "click";
 
 //    $("body").on("tap", function(){
 //      console.log('taped')
