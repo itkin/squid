@@ -14,4 +14,5 @@ group :assets do
 end
 
 gem 'capistrano'
+gem 'capistrano-rails'
 gem 'rvm-capistrano'
