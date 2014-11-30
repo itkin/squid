@@ -16,3 +16,5 @@ end
 gem 'capistrano'
 gem 'capistrano-rails'
 gem 'rvm-capistrano'
+
+gem 'sprockets'
