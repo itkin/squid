@@ -1,22 +1,25 @@
+require "rvm/capistrano"
 require 'bundler/capistrano'
 load 'deploy/assets'
 
 set :default_env, 'production'
 set :rails_env, ENV['rails_env'] || ENV['RAILS_ENV'] || default_env
 
+set :rvm_type, :system
+
 # Visiblement le DNS ne résout toujours pas correctement
-joscho = "188.165.255.184"
+joscho = "188.226.187.100"
 
 set :application, ""
 set :repository,  "https://github.com/itkin/squid.git"
 
 set :scm, :git
-set :deploy_to, "~/squid-corp.com"
+set :deploy_to, "~/squid"
 
 set :use_sudo, false
 
 set :user, "rails"
-set :scm_passphrase, Capistrano::CLI.password_prompt("Rails user password on joscho : ")
+# set :scm_passphrase, Capistrano::CLI.password_prompt("Rails user password on joscho : ")
 
 set :branch, "master"
 
@@ -57,6 +60,6 @@ end
 
 #before 'deploy:assets:precompile', :copy_production_configurations
 
-after "deploy:update_code", :remove_config_ru
+# after "deploy:update_code", :remove_config_ru
 
 #before 'deploy:restart', 'compile_static_pages'
